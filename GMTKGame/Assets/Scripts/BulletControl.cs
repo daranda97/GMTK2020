@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class BulletControl : MonoBehaviour
 {
-
+    enum Bullet
+    {
+        bullet,
+        rocket
+    }
     Vector3 target;
     bool youngBullet;
     float direction;
@@ -17,11 +21,14 @@ public class BulletControl : MonoBehaviour
 
     void HitWall()
     {
-        if(/*Trace toward wall hits wall within 0.1*/true)
+        if(youngBullet)
         {
-            //direction = target;
+            if (/*Trace toward wall hits wall within 0.1*/true)
+            {
+                //direction = target;
+            }
+            youngBullet = false;
         }
-        youngBullet = false;
     }
 
     // Update is called once per frame
