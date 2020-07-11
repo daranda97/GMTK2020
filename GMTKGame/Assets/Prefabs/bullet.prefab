@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7517264316242076069}
   - component: {fileID: 7517264316242076070}
   - component: {fileID: 7517264316242076071}
-  m_Layer: 0
+  - component: {fileID: 5377141316588221313}
+  m_Layer: 9
   m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,13 +89,29 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7517264316242076056}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
+  m_Radius: 1.63
+  m_Height: 2.18
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5377141316588221313
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517264316242076056}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 4
+  m_CollisionDetection: 1
 --- !u!1 &8293468410836537904
 GameObject:
   m_ObjectHideFlags: 0
