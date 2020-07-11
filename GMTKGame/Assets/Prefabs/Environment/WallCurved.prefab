@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5404058445273446938}
   - component: {fileID: 1198606741269906735}
   - component: {fileID: 853884901014561976}
+  - component: {fileID: 3952429177243977494}
   m_Layer: 0
   m_Name: WallCurved
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3952429177243977494
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7871420226172922009}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8895756177944404967, guid: 37dba53a0cc30534691f1f50bcc4a4ca, type: 3}

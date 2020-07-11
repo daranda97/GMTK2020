@@ -106,7 +106,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 1
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -114,13 +114,13 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.33333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 404dc16ee942bff42a47a8c8357d1c36, type: 2}
 --- !u!1 &10634633
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &10634634
 Transform:
@@ -161,7 +161,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10634633}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -231,7 +231,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &15484952
 Transform:
@@ -254,7 +254,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15484951}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -318,6 +318,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallCurvedWireframe (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587400981797432264, guid: bc73866212457a8468c1a7cb0c4004e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3831390077113072650, guid: bc73866212457a8468c1a7cb0c4004e7,
         type: 3}
@@ -400,7 +405,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &128783221
 Transform:
@@ -449,7 +454,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &163166204
 Transform:
@@ -472,7 +477,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163166203}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -607,6 +612,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall
       objectReference: {fileID: 0}
+    - target: {fileID: 9074435900975080822, guid: f80874951f31939469c4092ce6f40280,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f80874951f31939469c4092ce6f40280, type: 3}
 --- !u!1001 &210494062
@@ -690,6 +700,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ColumnSquareWireframe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6948581859617224345, guid: 2571726096e50ff4ebac10ddecffe5fc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2571726096e50ff4ebac10ddecffe5fc, type: 3}
@@ -781,6 +796,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallCorner (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6636286750690990192, guid: a601987538448e64d9b8159a62c86dc7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a601987538448e64d9b8159a62c86dc7, type: 3}
 --- !u!1 &299531315
@@ -800,7 +820,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &299531316
 Transform:
@@ -823,7 +843,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299531315}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -893,7 +913,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &301301711
 Transform:
@@ -916,7 +936,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301301710}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -986,7 +1006,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &348437638
 BoxCollider:
@@ -995,7 +1015,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348437637}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1073,6 +1093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallCurvedWireframe (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587400981797432264, guid: bc73866212457a8468c1a7cb0c4004e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7334123566248474297, guid: bc73866212457a8468c1a7cb0c4004e7,
         type: 3}
@@ -1153,7 +1178,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &402037019
 Transform:
@@ -1176,7 +1201,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402037018}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1279,7 +1304,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &454112565
 Transform:
@@ -1302,7 +1327,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454112564}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1366,6 +1391,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallCurvedWireframe (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587400981797432264, guid: bc73866212457a8468c1a7cb0c4004e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3831390077113072650, guid: bc73866212457a8468c1a7cb0c4004e7,
         type: 3}
@@ -1605,7 +1635,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &755700262
 Transform:
@@ -1628,7 +1658,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755700261}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1698,7 +1728,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &763193052
 Transform:
@@ -1721,7 +1751,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763193051}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1791,7 +1821,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &813728068
 BoxCollider:
@@ -1800,7 +1830,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813728067}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1878,6 +1908,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WallCurvedWireframe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3587400981797432264, guid: bc73866212457a8468c1a7cb0c4004e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7334123566248474297, guid: bc73866212457a8468c1a7cb0c4004e7,
         type: 3}
@@ -1964,7 +1999,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &956511441
 Transform:
@@ -1987,7 +2022,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 956511440}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2057,7 +2092,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &995018928
 Transform:
@@ -2080,7 +2115,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995018927}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2153,7 +2188,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1012847635
 Transform:
@@ -2221,7 +2256,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1031674402
 Transform:
@@ -2244,7 +2279,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031674401}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2429,7 +2464,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1068259486
 Transform:
@@ -2452,7 +2487,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068259485}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2522,7 +2557,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1102313680
 Transform:
@@ -2545,7 +2580,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102313679}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2615,7 +2650,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1121913189
 Transform:
@@ -2638,7 +2673,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121913188}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2708,7 +2743,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1123827184
 Transform:
@@ -2731,7 +2766,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123827183}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2871,6 +2906,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ColumnSquareWireframe (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6948581859617224345, guid: 2571726096e50ff4ebac10ddecffe5fc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2571726096e50ff4ebac10ddecffe5fc, type: 3}
 --- !u!4 &1158524993 stripped
@@ -2984,6 +3024,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ColumnSquareWireframe
       objectReference: {fileID: 0}
+    - target: {fileID: 6948581859617224345, guid: 2571726096e50ff4ebac10ddecffe5fc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2571726096e50ff4ebac10ddecffe5fc, type: 3}
 --- !u!4 &1268322645 stripped
@@ -3074,6 +3119,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallCorner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6636286750690990192, guid: a601987538448e64d9b8159a62c86dc7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a601987538448e64d9b8159a62c86dc7, type: 3}
 --- !u!1 &1314564401
@@ -3093,7 +3143,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1314564402
 Transform:
@@ -3116,7 +3166,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314564401}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3192,7 +3242,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1315194936
 Transform:
@@ -3215,7 +3265,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315194935}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3285,7 +3335,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1321580245
 Transform:
@@ -3308,7 +3358,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1321580244}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3443,6 +3493,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallCorner
       objectReference: {fileID: 0}
+    - target: {fileID: 6636286750690990192, guid: a601987538448e64d9b8159a62c86dc7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a601987538448e64d9b8159a62c86dc7, type: 3}
 --- !u!1 &1359706399
@@ -3462,7 +3517,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1359706400
 Transform:
@@ -3485,7 +3540,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359706399}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3555,7 +3610,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1366795021
 Transform:
@@ -3578,7 +3633,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366795020}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3654,7 +3709,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1509184831
 Transform:
@@ -3677,7 +3732,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509184830}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -3857,7 +3912,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1594561927
 Transform:
@@ -3880,7 +3935,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594561926}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4015,6 +4070,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ColumnSquareWireframe (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6948581859617224345, guid: 2571726096e50ff4ebac10ddecffe5fc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2571726096e50ff4ebac10ddecffe5fc, type: 3}
 --- !u!1 &1647177308
@@ -4034,7 +4094,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1647177309
 Transform:
@@ -4057,7 +4117,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1647177308}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4127,7 +4187,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1667776843
 Transform:
@@ -4150,7 +4210,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667776842}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4286,7 +4346,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!65 &1774104279
 BoxCollider:
@@ -4456,6 +4516,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ColumnSquareWireframe (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6948581859617224345, guid: 2571726096e50ff4ebac10ddecffe5fc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2571726096e50ff4ebac10ddecffe5fc, type: 3}
 --- !u!4 &1810213598 stripped
@@ -4481,7 +4546,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1889989512
 Transform:
@@ -4504,7 +4569,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889989511}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4708,6 +4773,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallCorner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6636286750690990192, guid: a601987538448e64d9b8159a62c86dc7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a601987538448e64d9b8159a62c86dc7, type: 3}
 --- !u!4 &1903739872 stripped
@@ -4733,7 +4803,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1910140644
 Transform:
@@ -4756,7 +4826,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910140643}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4891,6 +4961,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallCorner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6636286750690990192, guid: a601987538448e64d9b8159a62c86dc7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a601987538448e64d9b8159a62c86dc7, type: 3}
 --- !u!4 &1950534692 stripped
@@ -4916,7 +4991,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1987994242
 Transform:
@@ -4939,7 +5014,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987994241}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5009,7 +5084,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2016355109
 Transform:
@@ -5032,7 +5107,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2016355108}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5167,6 +5242,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallCorner (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6636286750690990192, guid: a601987538448e64d9b8159a62c86dc7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a601987538448e64d9b8159a62c86dc7, type: 3}
 --- !u!1 &2073518307
@@ -5186,7 +5266,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2073518308
 Transform:
@@ -5209,7 +5289,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073518307}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5279,7 +5359,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2086918218
 Transform:
@@ -5302,7 +5382,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2086918217}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5372,7 +5452,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2119299593
 Transform:
@@ -5395,7 +5475,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119299592}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5465,7 +5545,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2133025761
 Transform:
@@ -5488,7 +5568,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133025760}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fc08df7e8cdad6d4bb2a75b86276bba1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
