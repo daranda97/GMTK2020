@@ -8,6 +8,7 @@ public class enemy_nav_enemy_navigation_control : MonoBehaviour
  public Transform target;
 
     private NavMeshAgent agent;
+    public float rot_speed;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,12 @@ public class enemy_nav_enemy_navigation_control : MonoBehaviour
             agent.SetDestination(transform.position);
 
         }
+
+        Vector3 direction = target.position - transform.position;
+        Quaternion toRotation = Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, rot_speed * Time.deltaTime);
+
+
     }
 
 

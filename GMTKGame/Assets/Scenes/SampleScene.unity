@@ -4539,7 +4539,7 @@ PrefabInstance:
     - target: {fileID: 6435027845951780560, guid: 6b902bf9f5716374993801881b829e5f,
         type: 3}
       propertyPath: m_StoppingDistance
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6435027845951780560, guid: 6b902bf9f5716374993801881b829e5f,
         type: 3}
@@ -4549,7 +4549,12 @@ PrefabInstance:
     - target: {fileID: 6435027845951780560, guid: 6b902bf9f5716374993801881b829e5f,
         type: 3}
       propertyPath: m_Speed
-      value: 5
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6435027845951780560, guid: 6b902bf9f5716374993801881b829e5f,
+        type: 3}
+      propertyPath: m_AutoBraking
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b902bf9f5716374993801881b829e5f, type: 3}
