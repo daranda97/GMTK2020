@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class BulletControl : MonoBehaviour
 {
-    enum Bullet
-    {
-        bullet,
-        rocket
-    }
     Vector3 target;
     bool youngBullet;
-    float direction;
 
     // Start is called before the first frame update
     void Start()
@@ -23,17 +17,11 @@ public class BulletControl : MonoBehaviour
     {
         if(youngBullet)
         {
-            if (/*Trace toward wall hits wall within 0.1*/true)
+            if (/*Trace toward wall does not hit wall within 0.1*/true)
             {
-                //direction = target;
+                //change course directly to target
             }
             youngBullet = false;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
- 
     }
 }
