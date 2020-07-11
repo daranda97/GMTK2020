@@ -15,7 +15,7 @@ public class Character_control : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        cr = this.GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
