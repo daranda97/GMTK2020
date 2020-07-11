@@ -89,7 +89,7 @@ MonoBehaviour:
   turret: {fileID: 5630049850706794594}
   fireangle: 30
   firevelocity: 10000
-  refire_time: 2
+  refire_time: 0.4
 --- !u!1 &619085225898160295
 GameObject:
   m_ObjectHideFlags: 0

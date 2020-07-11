@@ -57,6 +57,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3dbe9843e3e5743bc194b050817c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  killing: 1
+  shattered_enemy: {fileID: 1796801475394545832, guid: a835134f43fb94d4eb1783dcc8de766e,
+    type: 3}
+  shattered_player: {fileID: 8870429163880830360, guid: b4fefd3747962804e8bcaaab7c8f7ca5,
+    type: 3}
 --- !u!1 &7517264316242076056
 GameObject:
   m_ObjectHideFlags: 0
