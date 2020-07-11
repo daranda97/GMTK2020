@@ -9,6 +9,7 @@ public class Character_control : MonoBehaviour
     public float move_speed;
     public bool move_lock;
     CharacterController cr;
+ 
 
     Vector2 mouse_look;
     Vector2 Smoothing;
@@ -47,9 +48,12 @@ public class Character_control : MonoBehaviour
 
     private void Move()
     {
+        
 
         float horizontal_in = Input.GetAxis("Horizontal") * move_speed;
         float vertical_in = Input.GetAxis("Vertical") * move_speed;
+
+       
 
         Vector3 move_forward = transform.forward * vertical_in;
         Vector3 move_sideways = transform.right * horizontal_in;
