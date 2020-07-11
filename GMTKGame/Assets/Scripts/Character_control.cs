@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Charactercontrol : MonoBehaviour
+public class Character_control : MonoBehaviour
 {
-
 
 
     public float move_speed;
@@ -16,13 +15,13 @@ public class Charactercontrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -39,8 +38,4 @@ public class Charactercontrol : MonoBehaviour
 
 
     }
-
-
-
-
 }
