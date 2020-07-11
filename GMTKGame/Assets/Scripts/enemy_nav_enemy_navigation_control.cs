@@ -18,8 +18,17 @@ public class enemy_nav_enemy_navigation_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(target.transform.position,agent.transform.position) < 50)
+        if (Vector3.Distance(target.position, transform.position) < 50)
+        {
             agent.SetDestination(target.position);
+
+        }
+        else {
+
+
+            agent.SetDestination(transform.position);
+
+        }
     }
 
 
