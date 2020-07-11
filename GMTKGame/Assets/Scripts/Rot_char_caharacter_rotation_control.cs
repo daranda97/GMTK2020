@@ -37,7 +37,7 @@ public class Rot_char_caharacter_rotation_control : MonoBehaviour
 
             ray = main_camera.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit, 100))
+            if (Physics.Raycast(ray, out hit, 1000))
             {
 
 
