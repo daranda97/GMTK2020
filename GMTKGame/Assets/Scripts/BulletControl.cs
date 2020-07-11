@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletBehavior : MonoBehaviour
+public class BulletControl : MonoBehaviour
 {
 
     Vector3 target;
@@ -17,7 +17,7 @@ public class BulletBehavior : MonoBehaviour
 
     void HitWall()
     {
-        if(/*Trace toward wall hits wall within 0.1*/)
+        if(/*Trace toward wall hits wall within 0.1*/true)
         {
             //direction = target;
         }
