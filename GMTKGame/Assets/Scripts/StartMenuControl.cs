@@ -10,7 +10,7 @@ public class StartMenuControl : MonoBehaviour
 
     void ChangeScene()
     {
-        SceneManager.LoadScene("SceneName", LoadSceneMode.single);
+        //SceneManager.LoadScene("SceneName", LoadSceneMode.single);
     }
 
 }

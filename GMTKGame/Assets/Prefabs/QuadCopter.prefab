@@ -82,10 +82,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e96dd14367e808040b72244518b39678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetingCone: {fileID: 4722129509927106637}
   bullet_prefab: {fileID: 7517264316242076056, guid: 794dcda52802aa240b639af6409988b7,
     type: 3}
   end_of_barrel: {fileID: 1413403357812647055}
-  refire_time: 0.1
+  turret: {fileID: 5630049850706794594}
+  fireangle: 30
+  firevelocity: 10000
+  refire_time: 2
 --- !u!1 &619085225898160295
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,6 +506,7 @@ GameObject:
   - component: {fileID: 7774138433185550075}
   - component: {fileID: 5705994953454947267}
   - component: {fileID: 8806260719763024145}
+  - component: {fileID: 4722129509927106637}
   m_Layer: 0
   m_Name: Cone
   m_TagString: Untagged
@@ -545,6 +550,18 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 3613567641014311022, guid: 37dba53a0cc30534691f1f50bcc4a4ca, type: 3}
+--- !u!114 &4722129509927106637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069537485094360072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dfd64b412cb33488942c7fa634d455, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2409533932798652976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1137,7 @@ GameObject:
   - component: {fileID: 6041876994210317805}
   - component: {fileID: 4003569983633315720}
   - component: {fileID: 2573281719962386851}
+  - component: {fileID: 5630049850706794594}
   m_Layer: 0
   m_Name: QuadroCopterGun
   m_TagString: Untagged
@@ -1190,6 +1208,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5630049850706794594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662138348482268811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95cfa15e49b6a704ebe372e43f4f68d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input_z: 0
+  speed: 1000
 --- !u!1 &5163149509887879443
 GameObject:
   m_ObjectHideFlags: 0

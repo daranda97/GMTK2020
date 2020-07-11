@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Turret_rot_gunturret_control : MonoBehaviour
 {
-
-    public GameObject gun_turret;
-    public bool trigger_control = false;
     public float input_z;
+    public float speed;
 
     // Start is called before the first frame update
     void Start()
@@ -18,11 +16,6 @@ public class Turret_rot_gunturret_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (trigger_control) {
-            Quaternion toRotation = new Quaternion(transform.rotation.x, transform.rotation.y, input_z, transform.rotation.w);
-            transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, 100f * Time.deltaTime);
-
-        }
+        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, Quaternion.Euler(0, 0, input_z), speed * Time.deltaTime);
     }
 }

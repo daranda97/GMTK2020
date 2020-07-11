@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BulletControl : MonoBehaviour
 {
-    Vector3 target;
-    bool youngBullet;
+    public Vector3 target;
+    private bool youngBullet;
 
     // Start is called before the first frame update
     void Start()
@@ -13,7 +13,7 @@ public class BulletControl : MonoBehaviour
 
     }
 
-    void HitWall()
+    private void OnCollisionEnter(Collision collision)
     {
         if (youngBullet)
         {
@@ -25,7 +25,8 @@ public class BulletControl : MonoBehaviour
         }
     }
 
-    void Hit(GameObject victim)
+    //This will go elsewhere.
+    /*void Hit(GameObject victim)
     {
         if (victim.tag == "player" && !youngBullet)
         {
@@ -35,5 +36,5 @@ public class BulletControl : MonoBehaviour
         {
             //kill enemy
         }
-    }
+    }*/
 }

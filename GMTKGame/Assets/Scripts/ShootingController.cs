@@ -5,39 +5,57 @@ using UnityEngine;
 public class ShootingController : MonoBehaviour
 {
     // Start is called before the first frame update
-    GameObject copter;
-    GameObject targetingCone;
-    List<GameObject> enemies;
-    private float shot_stopwatch;
+    public TargetingCone targetingCone;
     public GameObject bullet_prefab;
     public GameObject end_of_barrel;
+    public Turret_rot_gunturret_control turret;
+    public float fireangle;
+    public float firevelocity;
     public float refire_time;
 
-
-
+    private float shot_stopwatch;
 
     void Start()
     {
-        copter = this.transform.parent.gameObject;
+        shot_stopwatch = refire_time;
+    }
+
+    private void Update()
+    {
+        shot_stopwatch += Time.deltaTime;
+
+        if (Input.GetAxis("Fire1") != 0 && shot_stopwatch >= refire_time)
+        {
+            shot_stopwatch = 0;
+            ShootBullet();
+        }
     }
 
     void ShootBullet()
     {
-        float angle = ShotAngle();
-        Vector3 target = getBulletTarget();
+        //Transform target = targetingCone.GetTarget(this.transform).transform;
 
-        if (shot_stopwatch + refire_time <= Time.time)
-        {
+        GameObject newbullet = Instantiate(bullet_prefab);
+        newbullet.transform.position = end_of_barrel.transform.position;
+        newbullet.transform.rotation = end_of_barrel.transform.rotation;
 
-            shot_stopwatch = Time.time;
-            Instantiate(bullet_prefab, end_of_barrel.transform);
-            ///audio.GetComponent<AudioSource>().PlayOneShot(audio.GetComponent<AudioSource>().clip, 1f);
-        }
+        float angle;
+        if (Random.Range(0f, 1f) > 0.5f)
+            angle = Random.Range(fireangle / 2f, fireangle);
+        else
+            angle = -Random.Range(fireangle / 2f, fireangle);
 
-        //Shoot from copter gun at angle
+        turret.input_z = angle;
+
+        newbullet.transform.Rotate(transform.up, angle);
+
+        newbullet.GetComponent<Rigidbody>().AddForce(newbullet.transform.forward * firevelocity);
+
+        //Maybe add stuff about setting the target velocity
+        //newbullet.GetComponent<BulletControl>()
     }
 
-    void ShootRocket()
+    /*void ShootRocket()
     {
         float angle = ShotAngle();
         GameObject enemy;
@@ -49,103 +67,5 @@ public class ShootingController : MonoBehaviour
         }
         Vector3 target = Input.mousePosition;
         //Shoot from copter gun at angle with target
-    }
-
-    float ShotAngle()
-    {
-        Vector3 startingPosition = copter.transform.position;
-        Vector3 mouse = Input.mousePosition;
-        float angle = Vector3.Angle(startingPosition, mouse);
-        float lowerBound, upperBound;
-        bool right = false;
-        if (Random.Range(0, 2) == 0)
-        {
-            right = true;
-        }
-
-        if (startingPosition.x > mouse.x)
-        {
-            angle = 360 - angle;
-        }
-
-        if (right)
-        {
-            lowerBound = angle + 30;
-            upperBound = lowerBound + 120;
-        }
-        else
-        {
-            upperBound = angle - 30;
-            lowerBound = upperBound - 120;
-        }
-        return Random.Range(lowerBound, upperBound) % 360;
-    }
-
-    void DetectEnemy(GameObject other)
-    {
-        if(other.tag == "enemy")
-        {
-            enemies.Add(other);
-        }
-    }
-
-    void LoseEnemy(GameObject other)
-    {
-        if(other.tag == "enemy")
-        {
-            if(enemies.Contains(other))
-            {
-                enemies.Remove(other);
-            }
-        }
-    }
-
-    Vector3 getBulletTarget()
-    {
-        if(enemies.Count > 0)
-        {
-            float smallestDistance = 0, newDistance;
-            GameObject selectedObject = null;
-            foreach(GameObject enemy in enemies)
-            {
-                newDistance = Vector3.Distance(enemy.transform.position, copter.transform.position);
-                if (smallestDistance == 0)
-                {
-                    smallestDistance = newDistance;
-                    selectedObject = enemy;
-                }
-                else if(smallestDistance > newDistance)
-                {
-                    smallestDistance = newDistance;
-                    selectedObject = enemy;
-                }
-            }
-            return selectedObject.transform.position;
-        }
-        else
-        {
-            return Input.mousePosition;
-        }
-    }
-
-    GameObject getRocketTarget()
-    {
-        float smallestDistance = 0, newDistance;
-        GameObject selectedObject = null;
-        foreach (GameObject enemy in enemies)
-        {
-            newDistance = Vector3.Distance(enemy.transform.position, copter.transform.position);
-            if (smallestDistance == 0)
-            {
-                smallestDistance = newDistance;
-                selectedObject = enemy;
-            }
-            else if (smallestDistance > newDistance)
-            {
-                smallestDistance = newDistance;
-                selectedObject = enemy;
-            }
-        }
-        return selectedObject;
-    }
+    }*/
 }
