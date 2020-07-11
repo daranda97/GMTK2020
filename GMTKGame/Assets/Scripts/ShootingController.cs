@@ -8,6 +8,14 @@ public class ShootingController : MonoBehaviour
     GameObject copter;
     GameObject targetingCone;
     List<GameObject> enemies;
+    private float shot_stopwatch;
+    public GameObject bullet_prefab;
+    public GameObject end_of_barrel;
+    public float refire_time;
+
+
+
+
     void Start()
     {
         copter = this.transform.parent.gameObject;
@@ -17,6 +25,15 @@ public class ShootingController : MonoBehaviour
     {
         float angle = ShotAngle();
         Vector3 target = getBulletTarget();
+
+        if (shot_stopwatch + refire_time <= Time.time)
+        {
+
+            shot_stopwatch = Time.time;
+            Instantiate(bullet_prefab, end_of_barrel.transform);
+            ///audio.GetComponent<AudioSource>().PlayOneShot(audio.GetComponent<AudioSource>().clip, 1f);
+        }
+
         //Shoot from copter gun at angle
     }
 
