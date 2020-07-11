@@ -18,8 +18,7 @@ public class enem_wlk_enemy_wlaki_Animation_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cur_animator.SetFloat("WalkSpeed", 
-              new Vector2(animated_model.GetComponent<NavMeshAgent>().velocity.x, animated_model.GetComponent<NavMeshAgent>().velocity.y).magnitude);
+        cur_animator.SetFloat("WalkSpeed", Mathf.Clamp(animated_model.GetComponent<NavMeshAgent>().velocity.magnitude,0,1));
 
         
     }
