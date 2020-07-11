@@ -10,12 +10,12 @@ public class BulletControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     void HitWall()
     {
-        if(youngBullet)
+        if (youngBullet)
         {
             if (/*Trace toward wall does not hit wall within 0.1*/true)
             {
@@ -25,16 +25,15 @@ public class BulletControl : MonoBehaviour
         }
     }
 
-    void HitPlayer(GameObject player)
+    void Hit(GameObject victim)
     {
-        if(!youngBullet)
+        if (victim.tag == "player" && !youngBullet)
         {
             //kill player
         }
-    }
-
-    void HitEnemy(GameObject enemy)
-    {
-        //kill enemy
+        else if (victim.tag == "enemy")
+        {
+            //kill enemy
+        }
     }
 }
