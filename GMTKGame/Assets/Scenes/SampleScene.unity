@@ -575,6 +575,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   move_speed: 10
   move_lock: 0
+  rotation_sensitivity: 2
+  smoothing_factor: 2
+  halt_mouse_control: 0
+  top_camera: {fileID: 0}
 --- !u!65 &612487533
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1478,7 +1482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366795020}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -103, y: 26.663702, z: -78}
+  m_LocalPosition: {x: -103, y: 26.663702, z: -97}
   m_LocalScale: {x: 282.9, y: 50, z: 10}
   m_Children: []
   m_Father: {fileID: 427387405}
