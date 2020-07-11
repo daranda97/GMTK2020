@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3731125348997237892}
   - component: {fileID: 8258675103233364143}
   - component: {fileID: 3188639224029855838}
+  - component: {fileID: 7770659141226364453}
   m_Layer: 0
   m_Name: QuadCopter
   m_TagString: Untagged
@@ -69,6 +70,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+--- !u!114 &7770659141226364453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452695802001756571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96dd14367e808040b72244518b39678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet_prefab: {fileID: 7517264316242076056, guid: 794dcda52802aa240b639af6409988b7,
+    type: 3}
+  end_of_barrel: {fileID: 1413403357812647055}
+  refire_time: 0.1
 --- !u!1 &619085225898160295
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +461,90 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: -1000
+--- !u!1 &1413403357812647055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4502180224488954375}
+  m_Layer: 0
+  m_Name: End of barrel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4502180224488954375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413403357812647055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.536, z: 0.972}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6105649164874465814}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2069537485094360072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7774138433185550075}
+  - component: {fileID: 5705994953454947267}
+  - component: {fileID: 8806260719763024145}
+  m_Layer: 0
+  m_Name: Cone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7774138433185550075
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069537485094360072}
+  m_LocalRotation: {x: -1, y: -0, z: -0, w: -0.00000008940697}
+  m_LocalPosition: {x: 0, y: -2.1999817, z: 100.2}
+  m_LocalScale: {x: 24.058867, y: 14.176816, z: 100.20686}
+  m_Children: []
+  m_Father: {fileID: 6105649164874465814}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!33 &5705994953454947267
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069537485094360072}
+  m_Mesh: {fileID: 3613567641014311022, guid: 37dba53a0cc30534691f1f50bcc4a4ca, type: 3}
+--- !u!64 &8806260719763024145
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069537485094360072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3613567641014311022, guid: 37dba53a0cc30534691f1f50bcc4a4ca, type: 3}
 --- !u!1 &2409533932798652976
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +581,7 @@ Transform:
   - {fileID: 4752714291320755584}
   - {fileID: 7610081653468931374}
   m_Father: {fileID: 6105649164874465814}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5543482181985071852
 MeshFilter:
@@ -715,7 +816,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 9.67, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 7774138433185550075}
   - {fileID: 3361491094784220880}
+  - {fileID: 4502180224488954375}
   m_Father: {fileID: 3731125348997237892}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
