@@ -24,4 +24,17 @@ public class BulletControl : MonoBehaviour
             youngBullet = false;
         }
     }
+
+    void HitPlayer(GameObject player)
+    {
+        if(!youngBullet)
+        {
+            //kill player
+        }
+    }
+
+    void HitEnemy(GameObject enemy)
+    {
+        //kill enemy
+    }
 }

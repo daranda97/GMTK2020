@@ -6,7 +6,8 @@ public class RocketController : MonoBehaviour
 {
     GameObject rocket;
     Vector3 target;
-    bool youngRocket;
+    GameObject enemy = null;
+    bool isTrackingEnemy;
     float direction;
     float cancelDistance = (float) 0.5;
     float angleChange = (float)0.01;
@@ -14,36 +15,49 @@ public class RocketController : MonoBehaviour
     void Start()
     {
         rocket = this.transform.parent.gameObject;
-        youngRocket = true;
+        if(enemy == null)
+        {
+            isTrackingEnemy = false;
+        }
+        else
+        {
+            isTrackingEnemy = true;
+            target = enemy.transform.position;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (youngRocket)
+        //Update targeting information
+        if(isTrackingEnemy && enemy.activeInHierarchy)
         {
-            if(Vector3.Distance(target, rocket.transform.position) < cancelDistance)
-            {
-                youngRocket = false;
-                return;
-            }
-            float angle = Vector3.Angle(this.transform.position, target);
-            if (rocket.transform.position.x > target.x)
-            {
-                angle = (360 - angle);
-            }
-            if (direction < angle && direction + 180 < angle)
-            {
-                direction = (direction - (angle * angleChange)) % 360;
-                //change actual direction
-                return;
-            }
-            else
-            {
-                direction = (direction + (angle * angleChange)) % 360;
-                //change actual direction
-                return;
-            }
+            target = enemy.transform.position;
+        }
+
+        if (Vector3.Distance(target, rocket.transform.position) < cancelDistance)
+        {
+            //create 2 bullet that is not young in same place with slightly split trajectory (20 degree split) and same speed
+            //delete this rocket
+
+            return;
+        }
+        float angle = Vector3.Angle(this.transform.position, target);
+        if (rocket.transform.position.x > target.x)
+        {
+            angle = (360 - angle);
+        }
+        if (direction < angle && direction + 180 < angle)
+        {
+            direction = (direction - (angle * angleChange)) % 360;
+            //change actual direction
+            return;
+        }
+        else
+        {
+            direction = (direction + (angle * angleChange)) % 360;
+            //change actual direction
+            return;
         }
     }
 }
