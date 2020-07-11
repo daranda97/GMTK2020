@@ -805,7 +805,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1558397975}
   - component: {fileID: 1558397976}
-  - component: {fileID: 1558397977}
   m_Layer: 0
   m_Name: player_rotation_marionette
   m_TagString: Untagged
@@ -846,19 +845,6 @@ MonoBehaviour:
   main_camera: {fileID: 725707485}
   character_box: {fileID: 1558397974}
   speed: 1
---- !u!114 &1558397977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558397974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 852ad5d47b00ef840b01af2d0fbbed02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animated_model: {fileID: 1893789175}
 --- !u!1 &1637218774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,9 +1101,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b902bf9f5716374993801881b829e5f, type: 3}
---- !u!1 &1893789175 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1083912942488193190, guid: 6b902bf9f5716374993801881b829e5f,
-    type: 3}
-  m_PrefabInstance: {fileID: 1893789174}
-  m_PrefabAsset: {fileID: 0}
