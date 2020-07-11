@@ -87,9 +87,10 @@ MonoBehaviour:
     type: 3}
   end_of_barrel: {fileID: 1413403357812647055}
   turret: {fileID: 5630049850706794594}
-  fireangle: 30
-  firevelocity: 10000
-  refire_time: 0.4
+  nofireangle: 30
+  fireangle: 120
+  firevelocity: 5000
+  refire_time: 2
 --- !u!1 &619085225898160295
 GameObject:
   m_ObjectHideFlags: 0
