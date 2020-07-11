@@ -10,6 +10,16 @@ public class Character_control : MonoBehaviour
     public bool move_lock;
     CharacterController cr;
 
+    Vector2 mouse_look;
+    Vector2 Smoothing;
+    public float rotation_sensitivity = 2f;
+    public float smoothing_factor = 2f;
+    public bool halt_mouse_control;
+    public GameObject top_camera;
+
+    RaycastHit hit;
+    Ray ray;
+
 
 
     // Start is called before the first frame update
@@ -23,6 +33,15 @@ public class Character_control : MonoBehaviour
     {
         if (!move_lock)
             Move();
+
+
+
+       
+
+
+
+
+
     }
 
 
