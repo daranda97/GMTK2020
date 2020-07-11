@@ -8,9 +8,9 @@ public class StartMenuControl : MonoBehaviour
 
 
 
-    void ChangeScene()
+    public void ChangeScene()
     {
-        //SceneManager.LoadScene("SceneName", LoadSceneMode.single);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }
