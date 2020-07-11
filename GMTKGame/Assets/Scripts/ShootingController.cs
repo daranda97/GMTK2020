@@ -6,6 +6,8 @@ public class ShootingController : MonoBehaviour
 {
     // Start is called before the first frame update
     GameObject copter;
+    GameObject targetingCone;
+    List<GameObject> enemies;
     void Start()
     {
         copter = this.transform.parent.gameObject;
@@ -14,13 +16,22 @@ public class ShootingController : MonoBehaviour
     void ShootBullet()
     {
         float angle = ShotAngle();
+        Vector3 target = getBulletTarget();
         //Shoot from copter gun at angle
     }
 
     void ShootRocket()
     {
         float angle = ShotAngle();
-        //Shoot from copter gun at angle
+        GameObject enemy;
+
+        if(enemies.Count > 0)
+        {
+            enemy = getRocketTarget();
+            //Shoot from copter gun the same, but pass in enemy rather than target
+        }
+        Vector3 target = Input.mousePosition;
+        //Shoot from copter gun at angle with target
     }
 
     float ShotAngle()
@@ -51,5 +62,73 @@ public class ShootingController : MonoBehaviour
             lowerBound = upperBound - 120;
         }
         return Random.Range(lowerBound, upperBound) % 360;
+    }
+
+    void DetectEnemy(GameObject other)
+    {
+        if(other.tag == "enemy")
+        {
+            enemies.Add(other);
+        }
+    }
+
+    void LoseEnemy(GameObject other)
+    {
+        if(other.tag == "enemy")
+        {
+            if(enemies.Contains(other))
+            {
+                enemies.Remove(other);
+            }
+        }
+    }
+
+    Vector3 getBulletTarget()
+    {
+        if(enemies.Count > 0)
+        {
+            float smallestDistance = 0, newDistance;
+            GameObject selectedObject = null;
+            foreach(GameObject enemy in enemies)
+            {
+                newDistance = Vector3.Distance(enemy.transform.position, copter.transform.position);
+                if (smallestDistance == 0)
+                {
+                    smallestDistance = newDistance;
+                    selectedObject = enemy;
+                }
+                else if(smallestDistance > newDistance)
+                {
+                    smallestDistance = newDistance;
+                    selectedObject = enemy;
+                }
+            }
+            return selectedObject.transform.position;
+        }
+        else
+        {
+            return Input.mousePosition;
+        }
+    }
+
+    GameObject getRocketTarget()
+    {
+        float smallestDistance = 0, newDistance;
+        GameObject selectedObject = null;
+        foreach (GameObject enemy in enemies)
+        {
+            newDistance = Vector3.Distance(enemy.transform.position, copter.transform.position);
+            if (smallestDistance == 0)
+            {
+                smallestDistance = newDistance;
+                selectedObject = enemy;
+            }
+            else if (smallestDistance > newDistance)
+            {
+                smallestDistance = newDistance;
+                selectedObject = enemy;
+            }
+        }
+        return selectedObject;
     }
 }
