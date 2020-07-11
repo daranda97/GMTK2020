@@ -1723,6 +1723,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763193051}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &784262640 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3172109945540660715, guid: 9531ae232eee27848bb419e4af014992,
+    type: 3}
+  m_PrefabInstance: {fileID: 1744654615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &813728067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,7 +2751,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 2130916585}
+      objectReference: {fileID: 784262640}
     - target: {fileID: 3731125348997237892, guid: 45c364eaded700b41a54d0c98db0ad15,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2800,6 +2806,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258675103233364143, guid: 45c364eaded700b41a54d0c98db0ad15,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258675103233364143, guid: 45c364eaded700b41a54d0c98db0ad15,
+        type: 3}
+      propertyPath: m_Speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258675103233364143, guid: 45c364eaded700b41a54d0c98db0ad15,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 70
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45c364eaded700b41a54d0c98db0ad15, type: 3}
@@ -4536,11 +4557,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2130916585}
-    - target: {fileID: 3491608110537087722, guid: 6b902bf9f5716374993801881b829e5f,
-        type: 3}
-      propertyPath: rot_speed
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 6435027845951780560, guid: 6b902bf9f5716374993801881b829e5f,
         type: 3}
       propertyPath: m_StoppingDistance
