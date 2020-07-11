@@ -9,6 +9,7 @@ public class ShootingController : MonoBehaviour
     public GameObject bullet_prefab;
     public GameObject end_of_barrel;
     public Turret_rot_gunturret_control turret;
+    public float nofireangle;
     public float fireangle;
     public float firevelocity;
     public float refire_time;
@@ -41,9 +42,9 @@ public class ShootingController : MonoBehaviour
 
         float angle;
         if (Random.Range(0f, 1f) > 0.5f)
-            angle = Random.Range(fireangle / 2f, fireangle);
+            angle = Random.Range(nofireangle, fireangle);
         else
-            angle = -Random.Range(fireangle / 2f, fireangle);
+            angle = -Random.Range(nofireangle, fireangle);
 
         turret.input_z = angle;
 
