@@ -21,7 +21,8 @@ public class Character_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (!move_lock)
+            Move();
     }
 
 
@@ -34,7 +35,7 @@ public class Character_control : MonoBehaviour
         Vector3 move_forward = transform.forward * vertical_in;
         Vector3 move_sideways = transform.right * horizontal_in;
 
-        cr.SimpleMove(move_forward + move_sideways);
+       cr.SimpleMove(move_forward + move_sideways);
 
 
     }
