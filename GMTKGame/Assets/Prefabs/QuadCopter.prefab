@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3731125348997237892}
   - component: {fileID: 8258675103233364143}
+  - component: {fileID: 3188639224029855838}
+  - component: {fileID: 8936007622324554567}
   m_Layer: 0
   m_Name: QuadCopter
   m_TagString: Untagged
@@ -41,12 +43,12 @@ NavMeshAgent:
   m_GameObject: {fileID: 452695802001756571}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1
+  m_Radius: 2.5
   m_Speed: 10
-  m_Acceleration: 10
+  m_Acceleration: 30
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 4
+  m_StoppingDistance: 6
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -54,6 +56,33 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &3188639224029855838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452695802001756571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a5f5ead83d1df4d954af600ff812d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+--- !u!136 &8936007622324554567
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452695802001756571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.61, z: 0}
 --- !u!1 &857168225809106907
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e0cbcbcf09b1542b3c8a45ad2be61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &3479922837599439837
 GameObject:
   m_ObjectHideFlags: 0

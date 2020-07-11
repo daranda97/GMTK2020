@@ -34,7 +34,7 @@ public class Rot_char_caharacter_rotation_control : MonoBehaviour
             {
                 Vector3 direction = new Vector3(hit.point.x, transform.position.y, hit.point.z) - transform.position;
                 Quaternion toRotation = Quaternion.LookRotation(direction);
-                character_box.transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, speed * Time.time);
+                character_box.transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, speed * Time.deltaTime);
             }
         }
     }
