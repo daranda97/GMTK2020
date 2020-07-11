@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class RocketController : MonoBehaviour
 {
-    GameObject rocket;
-    Vector3 target;
-    GameObject enemy = null;
+    public GameObject rocket;
+    public Vector3 target;
+    public GameObject enemy = null;
     bool isTrackingEnemy;
     float direction;
-    float cancelDistance = (float) 0.5;
-    float angleChange = (float)0.01;
+    public float cancelDistance = 0.5f;
+    public float angleChange = 0.01f;
     // Start is called before the first frame update
     void Start()
     {
