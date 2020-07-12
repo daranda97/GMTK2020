@@ -10,7 +10,7 @@ public class TimeControl : MonoBehaviour
     public float changespeed;
 
     private bool decreasing;
-    private float fixedDeltaTime;
+    public float fixedDeltaTime;
     private float targetslow;
     private float currentchangespeed;
 
@@ -21,7 +21,7 @@ public class TimeControl : MonoBehaviour
     void Awake()
     {
         Time.timeScale = normaltime;
-        fixedDeltaTime = Time.fixedDeltaTime;
+        Time.fixedDeltaTime = fixedDeltaTime;
     }
 
     /*public void Pause()

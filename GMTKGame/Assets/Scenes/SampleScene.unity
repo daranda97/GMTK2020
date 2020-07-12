@@ -6264,6 +6264,7 @@ MonoBehaviour:
   slowtime: 0.3
   slowertime: 0.1
   changespeed: 3
+  fixedDeltaTime: 0.02
 --- !u!4 &1394712486
 Transform:
   m_ObjectHideFlags: 0
