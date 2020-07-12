@@ -36,8 +36,8 @@ public class RocketController : MonoBehaviour
             return;
         }*/
 
-        GetComponent<Rigidbody>().AddForce(-transform.forward * 120);
+        GetComponent<Rigidbody>().AddForce(-transform.forward * 140);
         transform.LookAt(target);
-        GetComponent<Rigidbody>().AddForce(transform.forward * 210);
+        GetComponent<Rigidbody>().AddForce(transform.forward * 180);
     }
 }
