@@ -208,7 +208,7 @@ MonoBehaviour:
   shattered_player: {fileID: 8870429163880830360, guid: b4fefd3747962804e8bcaaab7c8f7ca5,
     type: 3}
   enemycount: {fileID: 0}
-  youngBullet: 0
+  youngBullet: 1
 --- !u!1 &6307762603516187673
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class KillThings : MonoBehaviour
     public GameObject shattered_enemy;
     public GameObject shattered_player;
     public GameObject enemycount;
-    public bool youngBullet = true;
+    public bool youngBullet;
 
     private TimeControl timecontrol;
 
@@ -15,7 +15,6 @@ public class KillThings : MonoBehaviour
     {
         enemycount = GameObject.Find("HUD/Panel/EnemyCount");
         timecontrol = GameObject.Find("TimeControl").GetComponent<TimeControl>();
-        youngBullet = true;
     }
 
     private void OnTriggerEnter(Collider other)

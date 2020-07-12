@@ -357,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shattered_enemy: {fileID: 0}
   shattered_player: {fileID: 0}
-  EnemyCount: {fileID: 0}
+  enemycount: {fileID: 0}
   youngBullet: 0
 --- !u!1 &8942603587894698878
 GameObject:
@@ -420,8 +420,8 @@ MonoBehaviour:
     type: 3}
   shattered_player: {fileID: 8870429163880830360, guid: b4fefd3747962804e8bcaaab7c8f7ca5,
     type: 3}
-  EnemyCount: {fileID: 0}
-  youngBullet: 0
+  enemycount: {fileID: 0}
+  youngBullet: 1
 --- !u!1001 &2155037826083706018
 PrefabInstance:
   m_ObjectHideFlags: 0
