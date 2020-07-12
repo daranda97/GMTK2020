@@ -426,7 +426,7 @@ GameObject:
   - component: {fileID: 1683221369154237949}
   - component: {fileID: 8593159485442011039}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: NumEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,12 +444,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2931430470164237182}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -33, y: 0}
-  m_SizeDelta: {x: 94.19995, y: 51.8}
+  m_AnchoredPosition: {x: -10.7, y: 0}
+  m_SizeDelta: {x: 34.28, y: 32.125}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!222 &1683221369154237949
 CanvasRenderer:
@@ -505,8 +505,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1196,7 +1196,7 @@ GameObject:
   - component: {fileID: 1784737182444891921}
   - component: {fileID: 3296226027929050217}
   m_Layer: 5
-  m_Name: Image
+  m_Name: EnemyCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1213,15 +1213,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5151917258050219751}
   - {fileID: 2435021562861382980}
+  - {fileID: 5151917258050219751}
   m_Father: {fileID: 6349905651332745283}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 406.69995, y: 95.79999}
+  m_AnchoredPosition: {x: -12, y: -12}
+  m_SizeDelta: {x: 149.05, y: 53.85}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &1784737182444891921
 CanvasRenderer:
@@ -1445,12 +1445,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2931430470164237182}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 299.7, y: 70.855}
+  m_AnchoredPosition: {x: 0, y: 1.3063}
+  m_SizeDelta: {x: 104.07, y: 34.738}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &9047127647877400170
 CanvasRenderer:
@@ -1478,7 +1478,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Enemy Count:'
+  m_text: 'Enemies:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1506,8 +1506,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1547,10 +1547,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1089023607052406617}
-    characterCount: 12
+    characterCount: 8
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
