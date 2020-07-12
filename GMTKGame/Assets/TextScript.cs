@@ -5,6 +5,7 @@ using UnityEngine;
 public class TextScript : MonoBehaviour
 {
     public GameObject alttext;
+    public bool touchedrocket;
 
     private void Awake()
     {
