@@ -20,12 +20,15 @@ public class TargetingCone : MonoBehaviour
 
         foreach (GameObject enemy in enemies)
         {
-            if (enemy.activeInHierarchy)
+            if (enemy != null)
             {
-                if (Vector3.Distance(startpos.position, enemy.transform.position) < distance)
+                if (enemy.activeInHierarchy)
                 {
-                    toreturn = enemy;
-                    distance = Vector3.Distance(startpos.position, enemy.transform.position);
+                    if (Vector3.Distance(startpos.position, enemy.transform.position) < distance)
+                    {
+                        toreturn = enemy;
+                        distance = Vector3.Distance(startpos.position, enemy.transform.position);
+                    }
                 }
             }
         }
