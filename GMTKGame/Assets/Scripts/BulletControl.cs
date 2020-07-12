@@ -5,22 +5,24 @@ using UnityEngine;
 public class BulletControl : MonoBehaviour
 {
     public Vector3 target;
-    private bool youngBullet;
+    public bool youngBullet;
+    private GameObject bullet;
+    public float velocity;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        bullet = this.transform.parent.gameObject;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (youngBullet)
         {
-            if (/*Trace toward wall does not hit wall within 0.1*/true)
-            {
-                //change course directly to target
-            }
+            bullet.GetComponent<Rigidbody>().AddForce(-bullet.transform.forward * velocity);
+            float angle = Vector3.SignedAngle(transform.forward, target, transform.up) / 180f;
+            bullet.transform.Rotate(transform.up, angle);
+            bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * velocity);
             youngBullet = false;
         }
     }
