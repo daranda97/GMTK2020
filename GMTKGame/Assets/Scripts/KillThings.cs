@@ -6,9 +6,13 @@ public class KillThings : MonoBehaviour
 {
     public GameObject shattered_enemy;
     public GameObject shattered_player;
-    public GameObject EnemyCount;
+    public GameObject enemycount;
     public bool youngBullet = false;
 
+    private void Start()
+    {
+        enemycount = GameObject.Find("HUD/Panel/EnemyCount");
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,12 +27,14 @@ public class KillThings : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
+
         if (other.tag == "Enemy")
         {
             GameObject newshatter = Instantiate(shattered_enemy);
             newshatter.transform.position = other.transform.position;
             newshatter.transform.rotation = other.transform.rotation;
             Destroy(other.gameObject);
+            enemycount.GetComponent<EnemyCount>().DecreaseCount();
         }
     }
 }
