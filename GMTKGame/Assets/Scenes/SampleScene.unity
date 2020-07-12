@@ -5954,6 +5954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normaltime: 1
   slowtime: 0.3
+  slowertime: 0.1
   changespeed: 3
 --- !u!4 &1394712486
 Transform:
