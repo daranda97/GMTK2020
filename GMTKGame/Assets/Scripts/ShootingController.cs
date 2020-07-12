@@ -14,6 +14,9 @@ public class ShootingController : MonoBehaviour
     public float firevelocity;
     public float refire_time;
 
+    public GameObject canfireobject;
+    public GameObject nofireobject;
+
     private float shot_stopwatch;
 
 
@@ -25,6 +28,16 @@ public class ShootingController : MonoBehaviour
     private void Update()
     {
         shot_stopwatch += Time.deltaTime;
+        if (shot_stopwatch >= refire_time)
+        {
+            canfireobject.SetActive(true);
+            nofireobject.SetActive(false);
+        }
+        else
+        {
+            canfireobject.SetActive(false);
+            nofireobject.SetActive(true);
+        }
 
         if (Input.GetAxis("Fire1") != 0 && shot_stopwatch >= refire_time)
         {
@@ -69,7 +82,8 @@ public class ShootingController : MonoBehaviour
         newbullet.GetComponent<BulletControl>().target = target;
         newbullet.GetComponent<BulletControl>().youngBullet = true;
         newbullet.GetComponent<BulletControl>().velocity = firevelocity;
-        }
+        newbullet.GetComponentInChildren<KillThings>().youngBullet = true;
+    }
 
     /*void ShootRocket()
     {

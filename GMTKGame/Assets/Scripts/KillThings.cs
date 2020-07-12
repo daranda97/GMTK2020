@@ -6,17 +6,13 @@ public class KillThings : MonoBehaviour
 {
     public GameObject shattered_enemy;
     public GameObject shattered_player;
-    public float youngtime;
+    public bool youngBullet = false;
     private float timepassed;
 
-    private void Update()
-    {
-        timepassed += Time.deltaTime;
-    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (timepassed > youngtime)
+        if (!youngBullet)
         {
             //Will need to make the camera separate
             if (other.tag == "Player")
