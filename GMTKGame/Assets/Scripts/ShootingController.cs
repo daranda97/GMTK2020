@@ -1,10 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootingController : MonoBehaviour
 {
-    // Start is called before the first frame update
     public TargetingCone targetingCone;
     public GameObject bullet_prefab;
     public GameObject end_of_barrel;
@@ -34,17 +34,30 @@ public class ShootingController : MonoBehaviour
 
     void ShootBullet()
     {
-        //Transform target = targetingCone.GetTarget(this.transform).transform;
+        Vector3 target = new Vector3(0, transform.position.y, 0);
+        try
+        {
+            target = targetingCone.GetTarget(this.transform).transform.position;
+        }
+        catch (NullReferenceException e)
+        {
+            RaycastHit hit;
+            Ray ray = Camera.main.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
 
+            if (Physics.Raycast(ray, out hit, 1000))
+            {
+                target = new Vector3(hit.point.x, transform.position.y, hit.point.z);
+            }
+        }
         GameObject newbullet = Instantiate(bullet_prefab);
         newbullet.transform.position = end_of_barrel.transform.position;
         newbullet.transform.rotation = end_of_barrel.transform.rotation;
 
         float angle;
-        if (Random.Range(0f, 1f) > 0.5f)
-            angle = Random.Range(nofireangle, fireangle);
+        if (UnityEngine.Random.Range(0f, 1f) > 0.5f)
+            angle = UnityEngine.Random.Range(nofireangle, fireangle);
         else
-            angle = -Random.Range(nofireangle, fireangle);
+            angle = -UnityEngine.Random.Range(nofireangle, fireangle);
 
         turret.input_z = angle;
 
@@ -52,9 +65,13 @@ public class ShootingController : MonoBehaviour
 
         newbullet.GetComponent<Rigidbody>().AddForce(newbullet.transform.forward * firevelocity);
 
+        newbullet.GetComponent<BulletControl>().target = target;
+        newbullet.GetComponent<BulletControl>().youngBullet = true;
+        newbullet.GetComponent<BulletControl>().velocity = firevelocity;
+
         //Maybe add stuff about setting the target velocity
         //newbullet.GetComponent<BulletControl>()
-    }
+        }
 
     /*void ShootRocket()
     {
