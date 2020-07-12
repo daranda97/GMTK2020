@@ -14,7 +14,7 @@ public class TimeControl : MonoBehaviour
     private float targetslow;
     private float currentchangespeed;
 
-
+    private bool dead;
     private bool paused;
     private float ts;
 
@@ -24,7 +24,7 @@ public class TimeControl : MonoBehaviour
         Time.fixedDeltaTime = fixedDeltaTime;
     }
 
-    /*public void Pause()
+    public void Pause()
     {
         if (paused)
         {
@@ -39,13 +39,13 @@ public class TimeControl : MonoBehaviour
             Time.timeScale = 0;
             Time.fixedDeltaTime = 0;
         }
-    }*/
+    }
 
     // Update is called once per frame
     void Update()
     {
-        //if (!paused)
-        //{
+        if (!paused)
+        {
             if (decreasing)
             {
                 if (Time.timeScale > targetslow)
@@ -58,7 +58,7 @@ public class TimeControl : MonoBehaviour
             }
             else
             {
-                if (!paused)
+                if (!dead)
                 {
                     if (Time.timeScale < normaltime)
                     {
@@ -72,7 +72,7 @@ public class TimeControl : MonoBehaviour
                     }
                 }
             }
-        //}
+        }
     }
 
     public void Trigger()
@@ -82,20 +82,20 @@ public class TimeControl : MonoBehaviour
         currentchangespeed = changespeed;
     }
 
-    public void Pause()
+    public void Dead()
     {
-        if (paused)
+        if (dead)
         {
             //Time.timeScale = normaltime;
             //Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
-            paused = false;
+            dead = false;
         }
         else
         {
             decreasing = true;
             targetslow = slowertime;
             currentchangespeed = changespeed;
-            paused = true;
+            dead = true;
         }
     }
 }
