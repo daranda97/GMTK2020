@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 4619407058382639795}
   - component: {fileID: 7993262991076153630}
   - component: {fileID: 7396092219986134673}
-  - component: {fileID: 8135797075518147115}
   m_Layer: 9
   m_Name: rocket
   m_TagString: Untagged
@@ -37,6 +36,7 @@ Transform:
   m_Children:
   - {fileID: 1289145537598779489}
   - {fileID: 6958079352857437062}
+  - {fileID: 908694556128039323}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -248,27 +248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd77572e4fc0af04ba525907a91d56a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rocket: {fileID: 0}
   target: {x: 0, y: 0, z: 0}
   enemy: {fileID: 0}
-  cancelDistance: 0.5
-  angleChange: 0.01
-  velocity: 0
---- !u!114 &8135797075518147115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7517264316242076056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca3dbe9843e3e5743bc194b050817c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shattered_enemy: {fileID: 0}
-  shattered_player: {fileID: 0}
-  youngBullet: 0
 --- !u!1 &8293468410836537904
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1289145537598779489}
   - component: {fileID: 8754887790491243842}
+  - component: {fileID: 3564939972253863037}
   m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
@@ -361,6 +343,67 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &3564939972253863037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8293468410836537904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3dbe9843e3e5743bc194b050817c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shattered_enemy: {fileID: 0}
+  shattered_player: {fileID: 0}
+  youngBullet: 0
+--- !u!1 &8487989056963158812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908694556128039323}
+  - component: {fileID: 4542428931137291165}
+  m_Layer: 0
+  m_Name: Kill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908694556128039323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8487989056963158812}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -8.916666, y: -6.749999, z: 14.416666}
+  m_LocalScale: {x: 3.333333, y: 3.3333323, z: 3.3333323}
+  m_Children: []
+  m_Father: {fileID: 7517264316242076068}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4542428931137291165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8487989056963158812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca3dbe9843e3e5743bc194b050817c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shattered_enemy: {fileID: 0}
+  shattered_player: {fileID: 0}
+  youngBullet: 0
 --- !u!1001 &2155037826083706018
 PrefabInstance:
   m_ObjectHideFlags: 0
