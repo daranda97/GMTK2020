@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 1175741521685030497}
   - component: {fileID: 1175741521685030499}
   - component: {fileID: 2270553330477335488}
+  - component: {fileID: 1240282706391719776}
   m_Layer: 8
   m_Name: player_overlord
   m_TagString: Player
@@ -163,6 +164,14 @@ CapsuleCollider:
   m_Height: 6.89
   m_Direction: 1
   m_Center: {x: 0, y: 2.95, z: 0}
+--- !u!81 &1240282706391719776
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175741521685030498}
+  m_Enabled: 1
 --- !u!1 &3150942139419231644
 GameObject:
   m_ObjectHideFlags: 0
