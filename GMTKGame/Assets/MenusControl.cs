@@ -8,7 +8,8 @@ public class MenusControl : MonoBehaviour
     public GameObject timecontrol;
     public GameObject win_screen;
     public GameObject lose_screen;
-    //public GameObject pause_screen;
+    public GameObject pause_screen;
+    private bool pause_isopen = true;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +17,18 @@ public class MenusControl : MonoBehaviour
         timecontrol = GameObject.Find("TimeControl");
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown("escape"))
+        {
+            OpenMenu(2);
+        }
+    }
+
     public void OpenMenu(int menu)
     {
-        timecontrol.GetComponent<TimeControl>().Dead();
+        if (menu != 2)
+            timecontrol.GetComponent<TimeControl>().Dead();
         switch (menu)
         {
             case 0:                 //Winner Screen
@@ -28,6 +38,8 @@ public class MenusControl : MonoBehaviour
                 lose_screen.SetActive(true);
                 break;
             case 2:                 //Pause Menu
+                timecontrol.GetComponent<TimeControl>().Pause();
+                pause_screen.SetActive(true);
                 break;
         }
 
