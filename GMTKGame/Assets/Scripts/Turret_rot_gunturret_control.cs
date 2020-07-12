@@ -18,24 +18,40 @@ public class Turret_rot_gunturret_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-       
+        if (fire_limiter) {
             
-            
+            counter++;
+        }
 
-       
+        if (counter > 100) {
+            fire_limiter = false;
+            counter = 0;
+            input_z = 0;
 
-        
+
+        }
+
+        rotate(input_z);
+
+
+
+
     }
 
 
-    void rotate() {
+    void rotate(float targ) {
 
 
-        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, Quaternion.Euler(0, 0, input_z), speed * Time.deltaTime);
+        transform.localRotation = Quaternion.RotateTowards(transform.localRotation, Quaternion.Euler(0, 0, targ), speed * Time.deltaTime);
 
 
+
+    }
+
+    public void enable_turn(float inpt) {
+
+        input_z = inpt;
+        fire_limiter = true;
 
     }
 
