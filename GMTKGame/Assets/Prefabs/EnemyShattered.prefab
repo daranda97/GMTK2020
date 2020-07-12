@@ -2565,7 +2565,7 @@ PrefabInstance:
     - target: {fileID: 3482178615223233013, guid: 12e0b1a15c372b64b9935ec315be352b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.74
+      value: 4.82
       objectReference: {fileID: 0}
     - target: {fileID: 3482178615223233013, guid: 12e0b1a15c372b64b9935ec315be352b,
         type: 3}
@@ -2611,6 +2611,86 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
+      value: 0.64827836
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].inSlope
+      value: 0.10857027
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].outSlope
+      value: 0.10857027
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].inWeight
+      value: 0.1919992
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].outWeight
+      value: 0.33333334
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[2].time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].inSlope
+      value: 6.385135
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].outSlope
+      value: 6.385135
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].outWeight
+      value: 0.20379438
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447359182408930973, guid: 12e0b1a15c372b64b9935ec315be352b,
+        type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime0
+      value: 49151
       objectReference: {fileID: 0}
     - target: {fileID: 8933465504916440639, guid: 12e0b1a15c372b64b9935ec315be352b,
         type: 3}
