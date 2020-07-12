@@ -184,7 +184,7 @@ MonoBehaviour:
   turret: {fileID: 5630049850706794594}
   nofireangle: 30
   fireangle: 120
-  firevelocity: 5000
+  firevelocity: 2000
   refire_time: 2
   canfireobject: {fileID: 3485294047448350057}
   nofireobject: {fileID: 7159871694263688621}
