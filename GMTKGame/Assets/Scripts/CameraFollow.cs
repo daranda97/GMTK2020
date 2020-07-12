@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour
     {
         if (player)
         {
-            float interpolation = speed * Time.deltaTime;
+            float interpolation = speed * (Vector3.Distance(player.position, new Vector3(transform.position.x, player.position.y, transform.position.z))) * Time.deltaTime;
 
             Vector3 position = this.transform.position;
             position.z = Mathf.Lerp(this.transform.position.z, player.position.z, interpolation);
