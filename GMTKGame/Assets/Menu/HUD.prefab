@@ -431,6 +431,7 @@ MonoBehaviour:
   win_screen: {fileID: 6073265153708419674}
   lose_screen: {fileID: 6669315980085324783}
   pause_screen: {fileID: 7714315694929482390}
+  pause_isopen: 0
 --- !u!1 &1861707729697746498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,6 +1624,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6349905651332745283}
     m_Modifications:
+    - target: {fileID: 435004269388466777, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 435004269388466777, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6207917639472471734}
+    - target: {fileID: 435004269388466777, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OpenMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 435004269388466777, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 435004269388466777, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 435004269388466777, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 435004269388466777, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 435004270471097232, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
         type: 3}
       propertyPath: m_Color.r
@@ -1637,6 +1673,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.0736917
+      objectReference: {fileID: 0}
+    - target: {fileID: 435004270471097232, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 435004270471097234, guid: 2fdc89a13fd9fdf4c86656691a3d54d3,
         type: 3}
