@@ -46,9 +46,12 @@ public class enemy_nav_enemy_navigation_control : MonoBehaviour
             shoot();
         }
 
+        if (target.gameObject.activeInHierarchy)
+        {
             Vector3 direction = target.position - transform.position;
-        Quaternion toRotation = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, rot_speed * Time.deltaTime);
+            Quaternion toRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, rot_speed * Time.deltaTime);
+        }
 
 
     }
