@@ -58,7 +58,7 @@ public class TimeControl : MonoBehaviour
             }
             else
             {
-                if (targetslow != slowertime)
+                if (!paused)
                 {
                     if (Time.timeScale < normaltime)
                     {
@@ -86,8 +86,8 @@ public class TimeControl : MonoBehaviour
     {
         if (paused)
         {
-            Time.timeScale = normaltime;
-            Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
+            //Time.timeScale = normaltime;
+            //Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
             paused = false;
         }
         else
