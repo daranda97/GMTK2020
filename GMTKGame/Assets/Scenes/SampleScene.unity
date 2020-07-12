@@ -1541,6 +1541,16 @@ PrefabInstance:
       propertyPath: rot_speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3491608110537087722, guid: 6b902bf9f5716374993801881b829e5f,
+        type: 3}
+      propertyPath: refire_time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491608110537087722, guid: 6b902bf9f5716374993801881b829e5f,
+        type: 3}
+      propertyPath: firevelocity
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 6435027845951780560, guid: 6b902bf9f5716374993801881b829e5f,
         type: 3}
       propertyPath: m_StoppingDistance
@@ -3996,6 +4006,16 @@ PrefabInstance:
       propertyPath: rot_speed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3491608110537087722, guid: 6b902bf9f5716374993801881b829e5f,
+        type: 3}
+      propertyPath: refire_time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491608110537087722, guid: 6b902bf9f5716374993801881b829e5f,
+        type: 3}
+      propertyPath: firevelocity
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 6435027845951780560, guid: 6b902bf9f5716374993801881b829e5f,
         type: 3}
       propertyPath: m_StoppingDistance
@@ -4807,6 +4827,16 @@ PrefabInstance:
         type: 3}
       propertyPath: rot_speed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491608110537087722, guid: 6b902bf9f5716374993801881b829e5f,
+        type: 3}
+      propertyPath: refire_time
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3491608110537087722, guid: 6b902bf9f5716374993801881b829e5f,
+        type: 3}
+      propertyPath: firevelocity
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6435027845951780560, guid: 6b902bf9f5716374993801881b829e5f,
         type: 3}
