@@ -178,6 +178,8 @@ MonoBehaviour:
   targetingCone: {fileID: 4722129509927106637}
   bullet_prefab: {fileID: 7517264316242076056, guid: 794dcda52802aa240b639af6409988b7,
     type: 3}
+  rocket_prefab: {fileID: 7517264316242076056, guid: 73e6d5249f58e074aaf7ebc572cfa883,
+    type: 3}
   end_of_barrel: {fileID: 1413403357812647055}
   turret: {fileID: 5630049850706794594}
   nofireangle: 30
@@ -659,7 +661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7dfd64b412cb33488942c7fa634d455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemies: []
 --- !u!54 &4305277134578535360
 Rigidbody:
   m_ObjectHideFlags: 0
