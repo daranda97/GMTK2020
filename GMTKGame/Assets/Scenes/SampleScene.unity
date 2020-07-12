@@ -7189,7 +7189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1175741521157945208}
-  speed: 17
+  speed: 2
 --- !u!114 &1503095765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8391,7 +8391,7 @@ PrefabInstance:
     - target: {fileID: 3481744318382854857, guid: 34e6a8f68edeed846b5cb1cedebc5343,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3481744318382854857, guid: 34e6a8f68edeed846b5cb1cedebc5343,
         type: 3}
@@ -10870,7 +10870,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 85.18201, y: 130, z: 90.00001}
 --- !u!1001 &2141987194
 PrefabInstance:
