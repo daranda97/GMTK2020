@@ -152,7 +152,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  rot_speed: 0
+  rot_speed: 10
+  bullet_prefab: {fileID: 4385734387053896484, guid: 88b6a49b2d1a39f4697ee6c9e438d087,
+    type: 3}
+  end_of_barrel: {fileID: 913669315415753454}
+  refire_time: 3
+  firevelocity: 2000
 --- !u!136 &5219017488445751775
 CapsuleCollider:
   m_ObjectHideFlags: 0

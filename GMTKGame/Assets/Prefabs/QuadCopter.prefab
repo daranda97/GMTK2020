@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 8491761703716459859}
   - component: {fileID: 3823477939921021711}
   - component: {fileID: 901197446364912899}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gunrail (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2110,7 +2110,7 @@ GameObject:
   - component: {fileID: 4992544200275953286}
   - component: {fileID: 6413198368841525605}
   - component: {fileID: 1553439416084766314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: gunrail (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
