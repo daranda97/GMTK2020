@@ -16,6 +16,7 @@ public class ShootingController : MonoBehaviour
 
     private float shot_stopwatch;
 
+
     void Start()
     {
         shot_stopwatch = refire_time;
