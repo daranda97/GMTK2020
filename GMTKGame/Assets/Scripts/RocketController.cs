@@ -6,7 +6,7 @@ public class RocketController : MonoBehaviour
 {
     public Vector3 target;
     public GameObject enemy;
-    private float young_time = 1;
+    public float young_time;
 
     private void Start()
     {
@@ -19,6 +19,7 @@ public class RocketController : MonoBehaviour
         young_time -= Time.deltaTime;
         if(young_time < 0)
         {
+            Debug.Log("Killing");
             GetComponentInChildren<KillThings>().youngBullet = false;
         }
         //Update targeting information
