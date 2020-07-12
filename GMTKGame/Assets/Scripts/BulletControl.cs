@@ -6,14 +6,8 @@ public class BulletControl : MonoBehaviour
 {
     public Vector3 target;
     public bool youngBullet;
-    private GameObject bullet;
     public float velocity;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -25,6 +19,7 @@ public class BulletControl : MonoBehaviour
             transform.LookAt(target);
             GetComponent<Rigidbody>().AddForce(transform.forward * velocity);
             youngBullet = false;
+            GetComponentInChildren<KillThings>().youngBullet = false;
         }
     }
 }
