@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TargetingCone : MonoBehaviour
 {
-    private List<GameObject> enemies;
+    public List<GameObject> enemies;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +35,13 @@ public class TargetingCone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(other.tag);
         if (other.tag == "Enemy")
         {
+            Debug.Log("See enemy");
             if (enemies.Contains(other.gameObject))
             {
+                Debug.Log("Adding it");
                 enemies.Add(other.gameObject);
             }
         }
