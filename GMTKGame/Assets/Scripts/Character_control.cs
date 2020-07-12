@@ -7,21 +7,7 @@ public class Character_control : MonoBehaviour
 
 
     public float move_speed;
-    public bool move_lock;
     CharacterController cr;
- 
-
-    Vector2 mouse_look;
-    Vector2 Smoothing;
-    public float rotation_sensitivity = 2f;
-    public float smoothing_factor = 2f;
-    public bool halt_mouse_control;
-    public GameObject top_camera;
-
-    RaycastHit hit;
-    Ray ray;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -32,34 +18,21 @@ public class Character_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!move_lock)
-            Move();
-
-
-
-       
-
-
-
-
-
+        Move();
     }
 
 
     private void Move()
     {
-        
+        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        cr.Move(move * Time.deltaTime * move_speed);
 
-        float horizontal_in = Input.GetAxis("Horizontal") * move_speed;
-        float vertical_in = Input.GetAxis("Vertical") * move_speed;
-
-       
+        /*float horizontal_in = Input.GetAxis("Horizontal") * move_speed * Time.deltaTime;
+        float vertical_in = Input.GetAxis("Vertical") * move_speed * Time.deltaTime;
 
         Vector3 move_forward = transform.forward * vertical_in;
         Vector3 move_sideways = transform.right * horizontal_in;
-
-       cr.SimpleMove(move_forward + move_sideways);
-
-
+        Debug.Log(move_forward + move_sideways);
+        cr.SimpleMove(move_forward + move_sideways);*/
     }
 }
