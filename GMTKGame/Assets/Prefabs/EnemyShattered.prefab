@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7467165088084249030}
   - component: {fileID: 3982037969765664916}
   - component: {fileID: 5690660883786456856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 2154925443196115689}
   - component: {fileID: 7200123123163389161}
   - component: {fileID: 6595137418413255598}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 6574575840103794850}
   - component: {fileID: 7366095114820874562}
   - component: {fileID: 2253014671485648677}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.016
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 4179624417766417378}
   - component: {fileID: 939644904960800435}
   - component: {fileID: 8297944570984669637}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3365557491086449339}
   - component: {fileID: 8475167454010259744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 3142171056023694}
   - component: {fileID: 5994824014961533042}
   - component: {fileID: 3628815977455676508}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.019
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 8115196818059751345}
   - component: {fileID: 7868537288223103749}
   - component: {fileID: 8420427782366966477}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 1513440766145081560}
   - component: {fileID: 430803864939482112}
   - component: {fileID: 2246316234208492866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 7183252394656299713}
   - component: {fileID: 5642753192062642822}
   - component: {fileID: 255784501758137849}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.015
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -969,7 +969,7 @@ GameObject:
   - component: {fileID: 8269706896788620173}
   - component: {fileID: 151468990413441760}
   - component: {fileID: 6060413322814986369}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.005
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 7551798000500764448}
   - component: {fileID: 2469620044149786163}
   - component: {fileID: 3061616389591094687}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.018
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,7 +1191,7 @@ GameObject:
   - component: {fileID: 2009917037410044994}
   - component: {fileID: 5282999786528357383}
   - component: {fileID: 2634754804441513327}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1303,7 +1303,7 @@ GameObject:
   - component: {fileID: 5427933850005885346}
   - component: {fileID: 8025057457245796832}
   - component: {fileID: 8249990325432666277}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1414,7 +1414,7 @@ GameObject:
   - component: {fileID: 953512754565508260}
   - component: {fileID: 8520566362421692029}
   - component: {fileID: 7357357323803487917}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.009
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1525,7 +1525,7 @@ GameObject:
   - component: {fileID: 51770084073257268}
   - component: {fileID: 1921220460475350290}
   - component: {fileID: 1370313884669893944}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1636,7 +1636,7 @@ GameObject:
   - component: {fileID: 3362971071102178926}
   - component: {fileID: 4646825826434533364}
   - component: {fileID: 4882245311407334188}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.012
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1747,7 +1747,7 @@ GameObject:
   - component: {fileID: 1482966658068035250}
   - component: {fileID: 8563485169077605629}
   - component: {fileID: 6680472259586116206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.006
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1858,7 +1858,7 @@ GameObject:
   - component: {fileID: 3215319329766064654}
   - component: {fileID: 3603625575526718498}
   - component: {fileID: 5832925067491575528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1970,7 +1970,7 @@ GameObject:
   - component: {fileID: 5365404692125263838}
   - component: {fileID: 8857323626627895656}
   - component: {fileID: 8726551098275650298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.017
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 4365350951300660975}
   - component: {fileID: 3851489426049051742}
   - component: {fileID: 1431997011350722408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,7 +2192,7 @@ GameObject:
   - component: {fileID: 6751949380170110673}
   - component: {fileID: 8275631397230307486}
   - component: {fileID: 8782514972182498267}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.020
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2303,7 +2303,7 @@ GameObject:
   - component: {fileID: 791461272376527288}
   - component: {fileID: 2138191932354964311}
   - component: {fileID: 7736818468703754569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyShattered_cell.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}

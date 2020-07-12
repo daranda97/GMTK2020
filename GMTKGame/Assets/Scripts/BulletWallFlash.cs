@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class BulletWallFlash : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject prefab;
+    public float alivetime;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        GameObject newprefab = Instantiate(prefab);
+        newprefab.transform.position = transform.position;
+        newprefab.transform.rotation = Quaternion.Euler(Random.Range(0f, 360f), Random.Range(0f, 360f), Random.Range(0f, 360f));
+
+        Destroy(newprefab, alivetime);
     }
 }
