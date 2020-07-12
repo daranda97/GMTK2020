@@ -22,8 +22,8 @@ public class KillThings : MonoBehaviour
             if (other.tag == "Player")
             {
                 GameObject newshatter = Instantiate(shattered_player);
-                newshatter.transform.position = other.transform.position;
-                newshatter.transform.rotation = other.transform.rotation;
+                newshatter.transform.position = other.transform.GetChild(0).GetChild(0).position;
+                newshatter.transform.rotation = other.transform.GetChild(0).GetChild(0).rotation;
                 Destroy(other.gameObject);
             }
         }
