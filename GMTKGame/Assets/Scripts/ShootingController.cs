@@ -13,6 +13,9 @@ public class ShootingController : MonoBehaviour
     public float nofireangle;
     public float fireangle;
     public float firevelocity;
+    public float slow = 1000;
+    public float normal = 2000;
+    public float fast = 3000;
     public float refire_time;
 
     public GameObject canfireobject;
@@ -126,5 +129,20 @@ public class ShootingController : MonoBehaviour
         newrocket.GetComponent<RocketController>().enemy = objectTarget;
         newrocket.GetComponent<RocketController>().velocity = firevelocity;
         newrocket.GetComponentInChildren<KillThings>().youngBullet = true;
+    }
+
+    public void setSlowVelocity()
+    {
+        firevelocity = slow;
+    }
+
+    public void setNormalVelocity()
+    {
+        firevelocity = normal;
+    }
+
+    public void setFastVelocity()
+    {
+        firevelocity = fast;
     }
 }
