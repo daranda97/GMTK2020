@@ -8,6 +8,7 @@ public class EnemyCount : MonoBehaviour
     public List<GameObject> enemies = new List<GameObject>();
     int numenemies;
     public TMP_Text count;
+    public GameObject WinnerScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,10 @@ public class EnemyCount : MonoBehaviour
     {
         numenemies--;
         count.text = numenemies.ToString();
+        if (numenemies == 0)
+        {
+            WinnerScreen.SetActive(true);
+        }
     }
 
 }
