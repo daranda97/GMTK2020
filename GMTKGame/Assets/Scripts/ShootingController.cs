@@ -80,7 +80,7 @@ public class ShootingController : MonoBehaviour
         else
             angle = -UnityEngine.Random.Range(nofireangle, fireangle);
 
-        turret.input_z = angle;
+        turret.GetComponent<Turret_rot_gunturret_control>().enable_turn(angle);
 
         newbullet.transform.Rotate(transform.up, angle);
 

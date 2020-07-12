@@ -37,7 +37,7 @@ public class TargetingCone : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            if (enemies.Contains(other.gameObject))
+            if (!enemies.Contains(other.gameObject))
             {
                 enemies.Add(other.gameObject);
             }
