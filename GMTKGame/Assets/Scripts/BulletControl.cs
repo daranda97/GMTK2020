@@ -27,17 +27,4 @@ public class BulletControl : MonoBehaviour
             youngBullet = false;
         }
     }
-
-    //This will go elsewhere.
-    /*void Hit(GameObject victim)
-    {
-        if (victim.tag == "player" && !youngBullet)
-        {
-            //kill player
-        }
-        else if (victim.tag == "enemy")
-        {
-            //kill enemy
-        }
-    }*/
 }
