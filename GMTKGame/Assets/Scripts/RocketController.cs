@@ -6,7 +6,7 @@ public class RocketController : MonoBehaviour
 {
     public Vector3 target;
     public GameObject enemy;
-    private float young_time = 30;
+    private float young_time = 1;
 
     private void Start()
     {
