@@ -43,8 +43,8 @@ public class TimeControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!paused)
-        {
+        //if (!paused)
+        //{
             if (decreasing)
             {
                 if (Time.timeScale > targetslow)
@@ -71,7 +71,7 @@ public class TimeControl : MonoBehaviour
                     }
                 }
             }
-        }
+        //}
     }
 
     public void Trigger()
@@ -83,8 +83,18 @@ public class TimeControl : MonoBehaviour
 
     public void Pause()
     {
-        decreasing = true;
-        targetslow = slowertime;
-        currentchangespeed = changespeed;
+        if (paused)
+        {
+            Time.timeScale = normaltime;
+            Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
+            paused = false;
+        }
+        else
+        {
+            decreasing = true;
+            targetslow = slowertime;
+            currentchangespeed = changespeed;
+            paused = true;
+        }
     }
 }
