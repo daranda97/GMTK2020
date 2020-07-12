@@ -15,8 +15,8 @@ public class PlayRicochetSound : MonoBehaviour
     }
 
     // If the bullet comes into contact with a wall play a random sound clip.
-    private void OnCollisionEnter(Collision collision) {
-
+    private void OnCollisionEnter(Collision collision)
+    {
         aSource.clip = clips[Random.Range(0, clips.Count)];
         aSource.Play();
         aSource.pitch = Random.Range(1 - pitchoffset, 1 + pitchoffset);
