@@ -23,7 +23,7 @@ public class Turret_rot_gunturret_control : MonoBehaviour
             counter++;
         }
 
-        if (counter > 100) {
+        if (counter > 50) {
             fire_limiter = false;
             counter = 0;
             input_z = 0;
