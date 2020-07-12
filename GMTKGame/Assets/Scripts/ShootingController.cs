@@ -69,9 +69,6 @@ public class ShootingController : MonoBehaviour
         newbullet.GetComponent<BulletControl>().target = target;
         newbullet.GetComponent<BulletControl>().youngBullet = true;
         newbullet.GetComponent<BulletControl>().velocity = firevelocity;
-
-        //Maybe add stuff about setting the target velocity
-        //newbullet.GetComponent<BulletControl>()
         }
 
     /*void ShootRocket()
