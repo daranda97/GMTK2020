@@ -1289,8 +1289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b83ffa33b2409e4ea361b332ce6c29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timecontrol: {fileID: 0}
-  menuscontrol: {fileID: 0}
+  menuscontrol: {fileID: 1512185029541095940}
   count: {fileID: 8593159485442011039}
 --- !u!1 &7475680220236977403
 GameObject:
