@@ -6,12 +6,21 @@ public class RocketController : MonoBehaviour
 {
     public Vector3 target;
     public GameObject enemy;
-    
+    private float young_time = 100;
 
+    private void Start()
+    {
+        GetComponentInChildren<KillThings>().youngBullet = true;
+    }
 
     // Update is called once per frame
     void Update()
     {
+        young_time -= Time.deltaTime;
+        if(young_time < 0)
+        {
+            GetComponentInChildren<KillThings>().youngBullet = false;
+        }
         //Update targeting information
         if ((enemy != null) && enemy.activeInHierarchy)
         {
@@ -30,6 +39,5 @@ public class RocketController : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(-transform.forward * 120);
         transform.LookAt(target);
         GetComponent<Rigidbody>().AddForce(transform.forward * 190);
-
     }
 }
