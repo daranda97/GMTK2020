@@ -6261,9 +6261,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   normaltime: 1
-  slowtime: 0.3
+  slowtime: 0.4
   slowertime: 0.1
-  changespeed: 3
+  changespeed: 4
+  fixedDeltaTime: 0.02
 --- !u!4 &1394712486
 Transform:
   m_ObjectHideFlags: 0
