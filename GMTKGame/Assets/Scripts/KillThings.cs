@@ -7,7 +7,7 @@ public class KillThings : MonoBehaviour
     public GameObject shattered_enemy;
     public GameObject shattered_player;
     public GameObject enemycount;
-    public bool youngBullet = false;
+    public bool youngBullet = true;
 
     private void Start()
     {
