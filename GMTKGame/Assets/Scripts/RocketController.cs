@@ -6,7 +6,7 @@ public class RocketController : MonoBehaviour
 {
     public Vector3 target;
     public GameObject enemy;
-    public float young_time;
+    public float young_time = 2.0f;
 
     private void Start()
     {
@@ -37,8 +37,8 @@ public class RocketController : MonoBehaviour
             return;
         }*/
 
-        GetComponent<Rigidbody>().AddForce(-transform.forward * 120);
+        GetComponent<Rigidbody>().AddForce(-transform.forward * 125);
         transform.LookAt(target);
-        GetComponent<Rigidbody>().AddForce(transform.forward * 210);
+        GetComponent<Rigidbody>().AddForce(transform.forward * 175);
     }
 }
