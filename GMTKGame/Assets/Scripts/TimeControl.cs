@@ -70,7 +70,7 @@ public class TimeControl : MonoBehaviour
         }
     }
 
-    private void Trigger()
+    public void Trigger()
     {
         decreasing = true;
         targetslow = slowtime;
