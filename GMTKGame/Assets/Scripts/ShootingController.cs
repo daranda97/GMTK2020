@@ -124,7 +124,6 @@ public class ShootingController : MonoBehaviour
         
         newrocket.GetComponent<RocketController>().target = vectorTarget;
         newrocket.GetComponent<RocketController>().enemy = objectTarget;
-        newrocket.GetComponent<RocketController>().velocity = firevelocity;
         newrocket.GetComponentInChildren<KillThings>().youngBullet = true;
     }
 }
