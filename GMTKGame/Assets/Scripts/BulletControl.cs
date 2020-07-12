@@ -5,7 +5,7 @@ using UnityEngine;
 public class BulletControl : MonoBehaviour
 {
     public Vector3 target;
-    public bool youngBullet;
+    public bool youngBullet = false;
     private GameObject bullet;
     public float velocity;
 
@@ -25,6 +25,7 @@ public class BulletControl : MonoBehaviour
             transform.LookAt(target);
             GetComponent<Rigidbody>().AddForce(transform.forward * velocity);
             youngBullet = false;
+            GetComponentInChildren<KillThings>().youngBullet = false;
         }
     }
 }
