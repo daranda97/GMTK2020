@@ -15,6 +15,7 @@ public class enemy_nav_enemy_navigation_control : MonoBehaviour
     public GameObject end_of_barrel;
     public float refire_time;
     public float firevelocity;
+    
 
 
     // Start is called before the first frame update
@@ -33,6 +34,18 @@ public class enemy_nav_enemy_navigation_control : MonoBehaviour
             {
                 agent.SetDestination(target.position);
 
+
+                shot_stopwatch += Time.deltaTime;
+
+                if (shot_stopwatch >= refire_time)
+                {
+                    shoot();
+                }
+
+                Vector3 direction = target.position - transform.position;
+                Quaternion toRotation = Quaternion.LookRotation(direction);
+                transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, rot_speed * Time.deltaTime);
+
             }
             else
             {
@@ -42,30 +55,13 @@ public class enemy_nav_enemy_navigation_control : MonoBehaviour
                 // add patroling code here if applicable
             }
 
-            shot_stopwatch += Time.deltaTime;
-
-            if (shot_stopwatch >= refire_time)
-            {
-                shoot();
-            }
-
-            Vector3 direction = target.position - transform.position;
-            Quaternion toRotation = Quaternion.LookRotation(direction);
-            transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, rot_speed * Time.deltaTime);
+            
         }
 
 
     }
 
-    void Aim() {
-
-        // play animation if applicaple
-
-
-
-
-    }
-
+    
 
     void shoot() {
         
