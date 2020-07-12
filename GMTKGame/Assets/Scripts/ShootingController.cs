@@ -7,6 +7,7 @@ public class ShootingController : MonoBehaviour
 {
     public TargetingCone targetingCone;
     public GameObject bullet_prefab;
+    public GameObject rocket_prefab;
     public GameObject end_of_barrel;
     public Turret_rot_gunturret_control turret;
     public float nofireangle;
@@ -43,6 +44,12 @@ public class ShootingController : MonoBehaviour
         {
             shot_stopwatch = 0;
             ShootBullet();
+        }
+
+        if(Input.GetAxis("Fire2") != 0 && shot_stopwatch >= refire_time)
+        {
+            shot_stopwatch = 0;
+            ShootRocket();
         }
     }
 
@@ -85,17 +92,39 @@ public class ShootingController : MonoBehaviour
         newbullet.GetComponentInChildren<KillThings>().youngBullet = true;
     }
 
-    /*void ShootRocket()
+    void ShootRocket()
     {
-        float angle = ShotAngle();
-        GameObject enemy;
-
-        if(enemies.Count > 0)
+        GameObject objectTarget = targetingCone.GetTarget(this.transform);
+        Vector3 vectorTarget = new Vector3 { };
+        if(objectTarget == null)
         {
-            enemy = getRocketTarget();
-            //Shoot from copter gun the same, but pass in enemy rather than target
+            RaycastHit hit;
+            Ray ray = Camera.main.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit, 1000))
+            {
+                vectorTarget = new Vector3(hit.point.x, transform.position.y, hit.point.z);
+            }
         }
-        Vector3 target = Input.mousePosition;
-        //Shoot from copter gun at angle with target
-    }*/
+        GameObject newrocket = Instantiate(rocket_prefab);
+        newrocket.transform.position = end_of_barrel.transform.position;
+        newrocket.transform.rotation = end_of_barrel.transform.rotation;
+
+        float angle;
+        if (UnityEngine.Random.Range(0f, 1f) > 0.5f)
+            angle = UnityEngine.Random.Range(nofireangle, fireangle);
+        else
+            angle = -UnityEngine.Random.Range(nofireangle, fireangle);
+
+        turret.input_z = angle;
+
+        newrocket.transform.Rotate(transform.up, angle);
+
+        newrocket.GetComponent<Rigidbody>().AddForce(newrocket.transform.forward * firevelocity);
+        
+        newrocket.GetComponent<RocketController>().target = vectorTarget;
+        newrocket.GetComponent<RocketController>().enemy = objectTarget;
+        newrocket.GetComponent<RocketController>().velocity = firevelocity;
+        newrocket.GetComponentInChildren<KillThings>().youngBullet = true;
+    }
 }
