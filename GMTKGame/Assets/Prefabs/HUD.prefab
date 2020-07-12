@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemies: []
-  count: {fileID: 0}
+  count: {fileID: 8593159485442011039}
 --- !u!1 &7475680220236977403
 GameObject:
   m_ObjectHideFlags: 0
