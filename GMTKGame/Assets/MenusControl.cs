@@ -41,10 +41,10 @@ public class MenusControl : MonoBehaviour
             case 2:                 //Pause Menu
                 
                 timecontrol.GetComponent<TimeControl>().Pause();
-                if (pause_isopen == true)
+                if (pause_isopen == true)           
                 {
                     pause_isopen = false;
-                    pause_screen.SetActive(false);
+                    pause_screen.SetActive(false);          
                 }
 
                 else
