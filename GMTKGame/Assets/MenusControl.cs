@@ -9,12 +9,13 @@ public class MenusControl : MonoBehaviour
     public GameObject win_screen;
     public GameObject lose_screen;
     public GameObject pause_screen;
-    private bool pause_isopen = true;
+    public bool pause_isopen;
 
     // Start is called before the first frame update
     void Start()
     {
         timecontrol = GameObject.Find("TimeControl");
+        pause_isopen = false;
     }
 
     void Update()
@@ -38,8 +39,21 @@ public class MenusControl : MonoBehaviour
                 lose_screen.SetActive(true);
                 break;
             case 2:                 //Pause Menu
+                
                 timecontrol.GetComponent<TimeControl>().Pause();
-                pause_screen.SetActive(true);
+                if (pause_isopen == true)
+                {
+                    pause_isopen = false;
+                    pause_screen.SetActive(false);
+                }
+
+                else
+                {
+                    pause_isopen = true;
+                    pause_screen.SetActive(true);
+                }
+                    
+                
                 break;
         }
 
