@@ -13,13 +13,13 @@ public class KillThings : MonoBehaviour
         if (killing)
         {
             //Will need to make the camera separate
-            /*if (other.tag == "Player")
+            if (other.tag == "Player")
             {
                 GameObject newshatter = Instantiate(shattered_player);
                 newshatter.transform.position = other.transform.position;
                 newshatter.transform.rotation = other.transform.rotation;
                 Destroy(other.gameObject);
-            }*/
+            }
             if (other.tag == "Enemy")
             {
                 GameObject newshatter = Instantiate(shattered_enemy);
