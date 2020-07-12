@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b2a4e72984ccbd448bb401a148916856, type: 2}
+  - {fileID: 2100000, guid: 8916d2f4c2dfd144eb5402a5cd1ce3b0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -156,7 +156,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 1
+  m_Time: 3
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.3
@@ -186,8 +186,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.4156863, g: 0.9960785, b: 0.027450982, a: 1}
-      key1: {r: 0.654902, g: 0.9960785, b: 0.427451, a: 0}
+      key0: {r: 0.99607843, g: 0.4038129, b: 0.027450968, a: 1}
+      key1: {r: 0.99607843, g: 0.96649086, b: 0.42745095, a: 0}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -293,7 +293,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.3764706, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.71657264, b: 0, a: 1}
   m_Intensity: 50
   m_Range: 5
   m_SpotAngle: 30
@@ -357,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shattered_enemy: {fileID: 0}
   shattered_player: {fileID: 0}
+  EnemyCount: {fileID: 0}
   youngBullet: 0
 --- !u!1 &8942603587894698878
 GameObject:
@@ -419,6 +420,7 @@ MonoBehaviour:
     type: 3}
   shattered_player: {fileID: 8870429163880830360, guid: b4fefd3747962804e8bcaaab7c8f7ca5,
     type: 3}
+  EnemyCount: {fileID: 0}
   youngBullet: 0
 --- !u!1001 &2155037826083706018
 PrefabInstance:
