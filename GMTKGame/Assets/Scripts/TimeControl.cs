@@ -6,6 +6,7 @@ public class TimeControl : MonoBehaviour
 {
     public float normaltime;
     public float slowtime;
+    public float slowertime;
     public float changespeed;
 
     private bool decreasing;
@@ -22,7 +23,7 @@ public class TimeControl : MonoBehaviour
         fixedDeltaTime = Time.fixedDeltaTime;
     }
 
-    public void Pause()
+    /*public void Pause()
     {
         if (paused)
         {
@@ -37,7 +38,7 @@ public class TimeControl : MonoBehaviour
             Time.timeScale = 0;
             Time.fixedDeltaTime = 0;
         }
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -56,15 +57,18 @@ public class TimeControl : MonoBehaviour
             }
             else
             {
-                if (Time.timeScale < normaltime)
+                if (targetslow != slowertime)
                 {
-                    Time.timeScale += currentchangespeed * Time.deltaTime;
-                    Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
-                }
-                else
-                {
-                    Time.timeScale = normaltime;
-                    Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
+                    if (Time.timeScale < normaltime)
+                    {
+                        Time.timeScale += currentchangespeed * Time.deltaTime;
+                        Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
+                    }
+                    else
+                    {
+                        Time.timeScale = normaltime;
+                        Time.fixedDeltaTime = fixedDeltaTime * Time.timeScale;
+                    }
                 }
             }
         }
@@ -74,6 +78,13 @@ public class TimeControl : MonoBehaviour
     {
         decreasing = true;
         targetslow = slowtime;
+        currentchangespeed = changespeed;
+    }
+
+    public void Pause()
+    {
+        decreasing = true;
+        targetslow = slowertime;
         currentchangespeed = changespeed;
     }
 }
