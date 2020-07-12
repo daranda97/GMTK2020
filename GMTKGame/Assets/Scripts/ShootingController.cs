@@ -40,7 +40,7 @@ public class ShootingController : MonoBehaviour
         {
             target = targetingCone.GetTarget(this.transform).transform.position;
         }
-        catch (NullReferenceException e)
+        catch (NullReferenceException)
         {
             RaycastHit hit;
             Ray ray = Camera.main.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
