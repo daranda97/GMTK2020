@@ -8,12 +8,15 @@ public class KillThings : MonoBehaviour
     public GameObject shattered_player;
     public GameObject enemycount;
     public GameObject menus;
-    public bool youngBullet = true;
+    public bool youngBullet;
+
+    private TimeControl timecontrol;
 
     private void Start()
     {
         enemycount = GameObject.Find("HUD/Panel/EnemyCount");
         menus = GameObject.Find("HUD");
+        timecontrol = GameObject.Find("TimeControl").GetComponent<TimeControl>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,6 +26,7 @@ public class KillThings : MonoBehaviour
             //Will need to make the camera separate
             if (other.tag == "Player")
             {
+                timecontrol.Trigger();
                 GameObject newshatter = Instantiate(shattered_player);
                 newshatter.transform.position = other.transform.GetChild(0).GetChild(0).position;
                 newshatter.transform.rotation = other.transform.GetChild(0).GetChild(0).rotation;
@@ -33,6 +37,7 @@ public class KillThings : MonoBehaviour
 
         if (other.tag == "Enemy")
         {
+            timecontrol.Trigger();
             GameObject newshatter = Instantiate(shattered_enemy);
             newshatter.transform.position = other.transform.position;
             newshatter.transform.rotation = other.transform.rotation;

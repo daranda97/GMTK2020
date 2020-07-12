@@ -250,6 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
   enemy: {fileID: 0}
+  young_time: 1
 --- !u!1 &8293468410836537904
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +261,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1289145537598779489}
   - component: {fileID: 8754887790491243842}
-  - component: {fileID: 3564939972253863037}
   m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
@@ -343,22 +343,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &3564939972253863037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8293468410836537904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca3dbe9843e3e5743bc194b050817c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shattered_enemy: {fileID: 0}
-  shattered_player: {fileID: 0}
-  EnemyCount: {fileID: 0}
-  youngBullet: 0
 --- !u!1 &8942603587894698878
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,8 +404,8 @@ MonoBehaviour:
     type: 3}
   shattered_player: {fileID: 8870429163880830360, guid: b4fefd3747962804e8bcaaab7c8f7ca5,
     type: 3}
-  EnemyCount: {fileID: 0}
-  youngBullet: 0
+  enemycount: {fileID: 0}
+  youngBullet: 1
 --- !u!1001 &2155037826083706018
 PrefabInstance:
   m_ObjectHideFlags: 0
