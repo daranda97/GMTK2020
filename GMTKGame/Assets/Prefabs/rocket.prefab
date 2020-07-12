@@ -36,7 +36,7 @@ Transform:
   m_Children:
   - {fileID: 1289145537598779489}
   - {fileID: 6958079352857437062}
-  - {fileID: 908694556128039323}
+  - {fileID: 3730259395432869117}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -358,7 +358,7 @@ MonoBehaviour:
   shattered_enemy: {fileID: 0}
   shattered_player: {fileID: 0}
   youngBullet: 0
---- !u!1 &8487989056963158812
+--- !u!1 &8942603587894698878
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,43 +366,59 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 908694556128039323}
-  - component: {fileID: 4542428931137291165}
+  - component: {fileID: 3730259395432869117}
+  - component: {fileID: 2373618386253602091}
+  - component: {fileID: 4607497804707769552}
   m_Layer: 0
-  m_Name: Kill
+  m_Name: KillTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &908694556128039323
+--- !u!4 &3730259395432869117
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8487989056963158812}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -8.916666, y: -6.749999, z: 14.416666}
-  m_LocalScale: {x: 3.333333, y: 3.3333323, z: 3.3333323}
+  m_GameObject: {fileID: 8942603587894698878}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7517264316242076068}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4542428931137291165
+--- !u!135 &2373618386253602091
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8942603587894698878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4607497804707769552
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8487989056963158812}
+  m_GameObject: {fileID: 8942603587894698878}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca3dbe9843e3e5743bc194b050817c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shattered_enemy: {fileID: 0}
-  shattered_player: {fileID: 0}
+  shattered_enemy: {fileID: 1796801475394545832, guid: a835134f43fb94d4eb1783dcc8de766e,
+    type: 3}
+  shattered_player: {fileID: 8870429163880830360, guid: b4fefd3747962804e8bcaaab7c8f7ca5,
+    type: 3}
   youngBullet: 0
 --- !u!1001 &2155037826083706018
 PrefabInstance:
