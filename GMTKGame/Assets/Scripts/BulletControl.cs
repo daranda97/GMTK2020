@@ -5,15 +5,9 @@ using UnityEngine;
 public class BulletControl : MonoBehaviour
 {
     public Vector3 target;
-    public bool youngBullet = false;
-    private GameObject bullet;
+    public bool youngBullet;
     public float velocity;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
