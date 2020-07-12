@@ -12,17 +12,18 @@ public class BulletControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bullet = this.transform.parent.gameObject;
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (youngBullet)
         {
-            bullet.GetComponent<Rigidbody>().AddForce(-bullet.transform.forward * velocity);
-            float angle = Vector3.SignedAngle(transform.forward, target, transform.up) / 180f;
-            bullet.transform.Rotate(transform.up, angle);
-            bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.forward * velocity);
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
+
+            transform.LookAt(target);
+            GetComponent<Rigidbody>().AddForce(transform.forward * velocity);
             youngBullet = false;
         }
     }
