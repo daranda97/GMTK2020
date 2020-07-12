@@ -7,6 +7,7 @@ public class KillThings : MonoBehaviour
     public GameObject shattered_enemy;
     public GameObject shattered_player;
     public GameObject enemycount;
+    public GameObject menus;
     public bool youngBullet;
 
     private TimeControl timecontrol;
@@ -14,6 +15,7 @@ public class KillThings : MonoBehaviour
     private void Start()
     {
         enemycount = GameObject.Find("HUD/Panel/EnemyCount");
+        menus = GameObject.Find("HUD");
         timecontrol = GameObject.Find("TimeControl").GetComponent<TimeControl>();
     }
 
@@ -29,6 +31,7 @@ public class KillThings : MonoBehaviour
                 newshatter.transform.position = other.transform.GetChild(0).GetChild(0).position;
                 newshatter.transform.rotation = other.transform.GetChild(0).GetChild(0).rotation;
                 Destroy(other.gameObject);
+                menus.GetComponent<MenusControl>().OpenMenu(1);
             }
         }
 
