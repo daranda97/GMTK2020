@@ -27,28 +27,32 @@ public class enemy_nav_enemy_navigation_control : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(target.position, transform.position) < 50)
+        if (target)
         {
-            agent.SetDestination(target.position);
+            if (Vector3.Distance(target.position, transform.position) < 50)
+            {
+                agent.SetDestination(target.position);
 
-        }
-        else {
+            }
+            else
+            {
 
 
-            agent.SetDestination(transform.position);
-            // add patroling code here if applicable
-        }
+                agent.SetDestination(transform.position);
+                // add patroling code here if applicable
+            }
 
-        shot_stopwatch += Time.deltaTime;
+            shot_stopwatch += Time.deltaTime;
 
-        if (shot_stopwatch >= refire_time)
-        {
-            shoot();
-        }
+            if (shot_stopwatch >= refire_time)
+            {
+                shoot();
+            }
 
             Vector3 direction = target.position - transform.position;
-        Quaternion toRotation = Quaternion.LookRotation(direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, rot_speed * Time.deltaTime);
+            Quaternion toRotation = Quaternion.LookRotation(direction);
+            transform.rotation = Quaternion.Slerp(transform.rotation, toRotation, rot_speed * Time.deltaTime);
+        }
 
 
     }
