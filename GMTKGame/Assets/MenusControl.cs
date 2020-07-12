@@ -18,7 +18,7 @@ public class MenusControl : MonoBehaviour
 
     public void OpenMenu(int menu)
     {
-        timecontrol.GetComponent<TimeControl>().Pause();
+        timecontrol.GetComponent<TimeControl>().Dead();
         switch (menu)
         {
             case 0:                 //Winner Screen
