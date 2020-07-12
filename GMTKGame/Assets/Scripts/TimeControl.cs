@@ -20,6 +20,7 @@ public class TimeControl : MonoBehaviour
 
     void Awake()
     {
+        Time.timeScale = normaltime;
         fixedDeltaTime = Time.fixedDeltaTime;
     }
 
