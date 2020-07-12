@@ -38,10 +38,10 @@ public class RocketController : MonoBehaviour
             GameObject newbullet1 = Instantiate(bullet_prefab);
             GameObject newbullet2 = Instantiate(bullet_prefab);
             newbullet1.GetComponent<BulletControl>().youngBullet = false;
-            newbullet1.GetComponent<BulletControl>().youngBullet = false;
-            newbullet1.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 2f);
-            newbullet1.transform.forward = transform.forward;
-            newbullet2.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 2f);
+            newbullet2.GetComponent<BulletControl>().youngBullet = false;
+            newbullet1.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 1.5f);
+            newbullet2.transform.forward = transform.forward;
+            newbullet1.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - 1.5f);
             newbullet2.transform.forward = transform.forward;
             newbullet1.transform.Rotate(transform.up, 45);
             newbullet2.transform.Rotate(transform.up, -45);
